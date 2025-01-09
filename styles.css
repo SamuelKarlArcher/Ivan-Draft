@@ -1,0 +1,907 @@
+/* General css Layout */
+body {
+        font-family: "lato", sans-serif; /* Default font */
+        font-size: 17px;
+        color: #000000; /* Default text color */
+        line-height: 1.6; /* Improves readability */
+        background-color: rgb(0, 77, 139); /* Light gray background */
+        padding: 20px; /* Adds padding around the content */
+        text-align: center; /* Ensures text is centered */
+        justify-content: center;
+        align-items: center;
+}
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 15px;
+    color: #deff06; /* Darker color for headings */
+  }
+  
+  h1 {
+    font-size: 3.em;
+  }
+  
+  h2 {
+    font-size: 2.em;
+    color: #deff06;
+  }
+  
+  h3 {
+    font-size: 1.em;
+  }
+
+/* General Layout */
+.container {
+    max-width: 1200px; /* Restricts content width */
+    margin: 0 auto; /* Centers the container */
+    padding: 0 15px; /* Adds padding on the sides */
+}
+
+
+/* Links */
+a {
+    color: rgb(0, 17, 255); /* Blue color for links */
+    transition: color 0.3s ease; /* Smooth color transition */
+    text-decoration: none; /* Removes the underline */
+  }
+  
+a:hover {
+    color: #00aeff;; /* Darker blue on hover */
+}
+
+
+/* Navigation styling */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+nav ul li {
+    padding: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover effect for the links */
+nav ul li a:hover {
+    color: #4400ff;
+    transform: translateY(-5px);
+}
+
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    h1 {
+        margin-bottom: 20px;
+    }
+/*list*/
+
+/* Styling for the services section */
+.list {
+  padding: 20px;
+  background-color: #f3f5f7; /* Use the most recent background color */
+  border-radius: 0px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  list-style-type: none; /* Removes bullet points */
+  border: 1px solid #ddd;
+  margin: 3px auto; /* Add spacing outside the section */
+  max-width: 100%; /* Restrict the width for readability */
+}
+
+  
+  .list h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #3a6a8b;
+  }
+  .emoji0
+  {
+font-size: 2rem ;
+  }
+  
+  .list li h3 {
+    font-size: 1.5rem;
+    color: #333; /* Dark text color */
+  }
+  
+  .list li p {
+    font-size: 1rem;
+    color: #555; /* Lighter text color for descriptions */
+  }
+  
+  .list li:hover {
+    background-color: #c8e3fb; /* Light blue background on hover */
+    border-color: #dead4b; /* Blue border on hover */
+    transition: background-color 0.3s, border-color 0.3s; /* Smooth transition */
+    cursor: pointer;
+  }
+  /* Basic footer styling */
+/* Basic footer styling */
+/* Basic footer styling */
+.footer {
+  line-height: 1.6;
+  background-color: #000353; /* Dark background */
+  color: white;              /* White text color */
+  padding: 40px 20px;        /* Padding inside the footer */
+  text-align: center;        /* Center the text */
+  cursor: pointer;
+  width: 100%;               /* Full width of the screen */
+  box-sizing: border-box;    /* Prevent padding from overflowing */
+  display: flex;             /* Use flexbox for vertical centering */
+  flex-direction: column;    /* Stack elements vertically */
+  align-items: center;       /* Center elements horizontally */
+}
+
+/* Footer headings (h2) */
+footer h2 {
+  font-size: 1.8rem;         /* Larger font size for headings */
+  margin-bottom: 20px;       /* Space below the headings */
+  color: #deff06;;               /* Lighter color for headings */
+  text-align: center;        /* Ensure heading is centered */
+}
+
+/* Footer paragraphs */
+footer p {
+  font-size: 1rem;           /* Standard font size for paragraphs */
+  margin: 5px 0;            /* Space between paragraphs */
+  text-align: center;        /* Center the text */
+  width: 100%;               /* Ensure they take full width */
+  display: inline-block;     /* Ensure they are treated like block-level elements */
+}
+
+/* Container for the map */
+.map-container iframe {
+  overflow: hidden;
+  width: 100%;               /* Make iframe responsive */
+  height: 400px;             /* Set a fixed height for the map */
+  border: 0;                 /* Remove border around the iframe */
+  margin-top: 20px;          /* Space above the map */
+}
+
+/* Footer credits */
+.footer-credits p {
+  font-size: 0.9rem;         /* Smaller text for credits */
+  margin-top: 20px;          /* Space above the credits text */
+}
+
+/* Footer links */
+footer a {
+  color: #cdcdcd;            /* Light color for links */
+  text-decoration: none;     /* Remove underline from links */
+}
+
+/* Hover effect on footer links */
+footer a:hover {
+  text-decoration: underline; /* Underline links on hover */
+}
+
+/* Responsive Fix for Mobile */
+@media (max-width: 768px) {
+  footer {
+      padding: 20px 10px; /* Reduce padding on smaller screens */
+  }
+
+  footer h2 {
+      font-size: 1.5rem;   /* Reduce heading font size on mobile */
+  }
+
+  footer p {
+      font-size: 0.9rem;   /* Smaller font size for paragraphs on mobile */
+  }
+
+  .map-container iframe {
+      height: 300px;        /* Reduce map height on smaller screens */
+  }
+}
+
+  
+
+/* Navigation links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #f39c12;
+}
+
+.foot1 {
+  position: relative;
+  height: 50%; /* Adjust the height as needed */
+  overflow: hidden; /* Ensures video stays contained within the footer */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white; /* Makes text visible */
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7); /* Text contrast */
+}
+
+
+.jack {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image or video covers the container */
+  z-index: -1; /* Sends the media to the background */
+  filter: brightness(1.1) contrast(1.2); /* Enhances brightness and contrast */
+  image-rendering: auto; /* Ensures default rendering for better quality */
+}
+
+/* For High-DPI (Retina) Displays */
+@media (min-resolution: 2dppx) {
+  .jack {
+    background-size: cover; /* Ensure smooth scaling for high-resolution displays */
+  }
+}
+
+
+.foot1 {
+  z-index: 1; /* Keeps footer content above the video */
+  position: relative;
+  padding: 20px;
+}
+
+  /* Responsive Design: Make the footer elements stack on smaller screens */
+  @media (max-width: 768px) {
+    footer {
+      padding: 30px 10px;  /* Adjust padding for smaller screens */
+    }
+  
+    footer h2 {
+      font-size: 1.5rem;    /* Smaller heading font size */
+    }
+  
+    footer p {
+      font-size: 0.9rem;    /* Smaller text size for paragraphs */
+    }
+    .general {
+      position: relative; /* Ensure proper positioning context */
+  }
+  
+  .general {
+      position: relative; /* Avoid overlap */
+      z-index: 1; /* Stack items correctly */
+      margin-bottom: 50px;
+      margin-left: 30px;
+      float: right;
+  }
+  }  
+  p {
+    max-width: 800px; /* Set the maximum width of the paragraph */
+    position: relative;
+    align-items: center;
+    margin: 0 auto; /* Centers the box horizontally */
+  }
+
+
+  #about {
+    background-color: #fdfdfd; /* Subtle background color for distinction */
+    padding: 20px; /* Add spacing inside the section */
+    margin: 3px auto; /* Add spacing outside the section */
+    border-radius: 0px; /* Round the edges of the block */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    max-width: 100%; /* Restrict the width for readability */
+    font-family: Arial, sans-serif; /* Clean, modern font */
+    line-height: 1.6; /* Increase line height for better readability */
+  }
+  
+  #about h2 {
+    color: #3a6a8b; /* Distinct color for headings */
+    margin-bottom: 10px; /* Space below the headings */
+  }
+  
+  #about p {
+    color: #333; /* Standard text color for paragraphs */
+    margin-bottom: 15px; /* Space between paragraphs */
+  }
+  
+  #about .About {
+    margin-bottom: 20px; /* Space between the sections */
+  }
+  
+  #about div {
+    text-align: center; /* Align content in the div to center */
+    margin: 10px 0;
+    color: #3a6a8b; /* Match color with the heading */
+  }
+.bookinlink
+{
+  text-decoration: underline;
+  color: #000154;
+}
+
+.map-container {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.foot1 {
+  position: relative;
+  height: 60vh; /* Full screen height */
+  overflow: hidden; /* Ensures video stays contained within the footer */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white; /* Makes text visible */
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7); /* Text contrast */
+}
+.emoji0::after
+  {
+content: "🩺";
+font-size: 1.2em;
+margin-left:5px;
+  }
+
+.emoji1::after {
+  content: " 📖"; /* Emoji to be added */
+  font-size: 1.2em; /* Adjust emoji size */
+  margin-left: 5px; /* Adds spacing between the text and emoji */
+}
+.emoji2::after {
+  content: " 📞"; /* Emoji to be added */
+  font-size: 1.2em; /* Adjust emoji size */
+  margin-left: 5px; /* Adds spacing between the text and emoji */
+}
+.emoji3::after {
+  content: " 🧑‍🧑‍🧒‍🧒"; /* Emoji to be added */
+  font-size: 1.2em; /* Adjust emoji size */
+  margin-left: 5px; /* Adds spacing between the text and emoji */
+}
+/* General section styling */
+
+#about:hover {
+  background-color: #e3f2fd; /* Slightly changes background color on hover */
+}
+
+
+.emoji1:hover::after {
+  transform: rotate(360deg); /* Rotates emoji on hover */
+  color: #ff9800; /* Changes emoji color */
+}
+
+.emoji2:hover::after {
+  transform: scale(1.5); /* Scales up emoji on hover */
+  color: #4caf50; /* Changes emoji color */
+}
+
+.emoji3:hover::after {
+  transform: translateY(-10px); /* Moves emoji upwards on hover */
+  color: #2196f3; /* Changes emoji color */
+}
+
+/* Paragraph styling */
+#about p {
+  color: #000000;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+#about p:hover {
+  cursor: pointer;
+  color: #000; /* Darkens text on hover */
+  transform: translateX(10px); /* Slightly moves text to the right */
+}
+
+/* Link styling */
+#about a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+#about a:hover {
+  color: #0056b3; /* Darkens link color on hover */
+  text-decoration: underline; /* Adds underline on hover */
+}
+
+/* Add slight animation for overall smoothness */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+.foot2 {
+  position: relative;
+  height: 1px; /* Adjust the height as needed */
+  overflow: hidden; /* Ensures video stays contained within the footer */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white; /* Makes text visible */
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7); /* Text contrast */
+}
+
+
+/* Navigation menu styling */
+
+/* General Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Billboard Container */
+.billboard {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Full screen height */
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #001678; /* Fallback color */
+  color: #fff;
+}
+
+/* Header Section */
+.header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  z-index: 10;
+}
+
+/* Logo Styling */
+
+.billboard {
+  background-image: url('Tugela\ river.JPG');
+  background-size: cover; /* Ensures the image covers the entire section */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents tiling */
+  color: white; /* Adjusts text color for readability */
+  padding: 20px; /* Adds spacing within the section */
+}
+
+
+.billboardimg img {
+  margin-top: 70px;
+  width: 300px;  /* Set the width to a fixed value (adjust as necessary) */
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+}
+
+/* Logo Styling */
+.logo {
+  margin-top: 70px;
+  max-width: 15%;
+  position: relative;
+}
+
+.logo img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.logo img:hover {
+  transform: scale(1.1);  /* Enlarge logo on hover */
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.5); /* Add shadow on hover */
+}
+
+/* Responsive Logo Sizing */
+@media (max-width: 768px) {
+  .logo {
+      max-width: 25%; /* Adjust relative size for smaller screens */
+  }
+}
+
+
+
+/* Navigation Menu */
+
+.dropdown {
+  width: 100%;
+  position: fixed;
+  z-index: 1000;
+}
+
+/* Dropdown Button */
+.dropdown-button {
+  font-weight: bold;
+  width: 100%;
+  background-color: #000000;  /* Gold color for the button */
+  color: rgb(255, 255, 255);
+  padding: 10px 0;  /* Add vertical padding for better appearance */
+  font-size: 16px;
+  width: 100%;  /* Ensure the button spans the entire width */
+  border: none;
+  cursor: pointer;
+  text-align: center;  /* Center the text inside the button */
+  border-radius: 0;  /* Clean, full-width style */
+  box-sizing: border-box;  /* Prevent padding from affecting the button's width */
+}
+
+.dropdown-button:hover {
+  background-color: #0e1da9; /* Darker gold on hover */
+}
+
+.dropdown-menu {
+  display: none; /* Hidden by default */
+  position: absolute; /* Position relative to the button */
+  background-color: #ffffff;
+  width: 100%; /* Match the button's width */
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Add shadow for better visibility */
+  list-style: none; /* Remove list bullets */
+  padding: 0; /* Remove padding from the list */
+  margin: 0; /* Remove margin */
+  border-radius: 0; /* Match the rectangular style */
+  left: 0; /* Align with the button */
+  text-transform: none; /* Ensure the text is displayed as written */
+  z-index: 1000;
+}
+
+.dropdown-menu li {
+  padding: 10px 16px; /* Add padding for clickable items */
+  text-align: center; /* Align text to the left */
+}
+
+.dropdown-menu li a {
+  text-decoration: none; /* Remove underline */
+  color: #333; /* Text color */
+  display: block; /* Make the link block-level for easy clicking */
+  text-transform: none; /* Ensure the text is displayed as written */
+}
+
+.dropdown-menu li a:hover {
+  background-color: #f1f1f1; /* Highlight link on hover */
+}
+
+.dropdown:hover .dropdown-menu {
+  width: 100%;
+  display: block; /* Show the dropdown menu when hovering over the button */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .dropdown {
+    display: block;              /* Stack the dropdown in smaller screens */
+    width: 100%;                 /* Make the dropdown width 100% on small screens */
+  }
+
+  .dropdown-menu {
+    position: static;            /* Make the dropdown menu stack below the button */
+    width: 100%;                 /* Make the dropdown menu take up the full width */
+  }
+}
+
+/* Billboard Content */
+.billboard-content {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: left;
+  color: #ffffff;
+}
+
+.billboard-content h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.billboard-content p {
+  font-size: 1.5em;
+}
+
+/* Slider Section */
+.billboard-slider {
+  position: absolute;
+  top: 300px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 20px;
+  }
+
+  .billboard-content h1 {
+    font-size: 2em;
+  }
+
+  .billboard-content p {
+    font-size: 1.2em;
+  }
+
+  .dropdown-menu {
+    width: 150px; /* Adjust dropdown size for smaller screens */
+  }
+}
+
+
+/* Container for Text Blocks */
+.text-blocks {
+  display: flex; /* Arrange blocks horizontally */
+  gap: 20px; /* Space between blocks */
+  justify-content: center; /* Center blocks horizontally within the container */
+  align-items: center; /* Align blocks vertically (optional, for uniform height) */
+}
+.text-blocks2 {
+  display: flex; /* Arrange blocks horizontally */
+  gap: 20px; /* Space between blocks */
+  justify-content: center; /* Center blocks horizontally within the container */
+  align-items: center; /* Align blocks vertically (optional, for uniform height) */
+}
+
+/* Individual Block Styles */
+.block {
+  background-color: #ffffff; /* White background */
+  border: 1px solid #ddd; /* Light gray border */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  padding: 20px;
+  width: 400px; /* Fixed width for each block */
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover effects */
+}
+.block1 {
+  background-color: #ffffff; /* White background */
+  border: 1px solid #ddd; /* Light gray border */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  padding: 20px;
+  width: 400px; /* Fixed width for each block */
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover effects */
+}
+.block2 {
+  background-color: #ffffff; /* White background */
+  border: 1px solid #ddd; /* Light gray border */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  padding: 20px;
+  width: 400px; /* Fixed width for each block */
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover effects */
+}
+/* Individual Block Styles */
+.block21 {
+  background-color: #ffffff; /* White background */
+  border: 1px solid #ddd; /* Light gray border */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  padding: 20px;
+  height: 160px;
+  width: 400px; /* Fixed width for each block */
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover effects */
+}
+.block22 {
+  background-color: #ffffff; /* White background */
+  border: 1px solid #ddd; /* Light gray border */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  padding: 20px;
+  height: 160px;
+  width: 400px; /* Fixed width for each block */
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover effects */
+}
+.block23 {
+  background-color: #ffffff; /* White background */
+  border: 1px solid #ddd; /* Light gray border */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  padding: 20px;
+  height: 160px;
+  width: 400px; /* Fixed width for each block */
+  text-align: center;
+  margin: 3px;
+  transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover effects */
+}
+
+/* Hover Effects */
+.block:hover {
+  transform: scale(1.05); /* Slightly enlarge on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+}
+/* Hover Effects */
+.block1:hover {
+  transform: scale(1.05); /* Slightly enlarge on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+}
+/* Hover Effects */
+.block2:hover {
+  transform: scale(1.05); /* Slightly enlarge on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+}
+.block21:hover {
+  transform: scale(1.05); /* Slightly enlarge on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+}
+/* Hover Effects */
+.block22:hover {
+  transform: scale(1.05); /* Slightly enlarge on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+}
+/* Hover Effects */
+.block23:hover {
+  transform: scale(1.05); /* Slightly enlarge on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+}
+
+/* Headings */
+.block h3 {
+  margin: 0 0 10px;
+  font-size: 1.5rem;
+  color: #222;
+}
+
+.block1 h3 {
+  margin: 0 0 10px;
+  font-size: 1.5rem;
+  color: #222;
+}
+
+.block2 h3 {
+  margin: 0 0 10px;
+  font-size: 1.5rem;
+  color: #222;
+}
+/* Headings Article Blocks */
+.block21 h3 {
+  margin: 0 0 10px;
+  font-size: 1.5rem;
+  color: #222;
+}
+
+.block22 h3 {
+  margin: 0 0 10px;
+  font-size: 1.5rem;
+  color: #222;
+}
+
+.block23 h3 {
+  margin: 0 0 10px;
+  font-size: 1.5rem;
+  color: #222;
+}
+
+/* Paragraphs */
+.block p {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+.block1 p {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+/*Paragraphs Article Blocks */
+.block2 p {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+.block21 p {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+.block22 p {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+.block23 p {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+
+.block::after {
+  content: "✅"; /* Emoji to be added */
+  font-size: 1.2em; /* Adjust emoji size */
+  margin-left: 5px; /* Adds spacing between the text and emoji */
+}
+.block1::after {
+  content: " 🕰️"; /* Emoji to be added */
+  font-size: 1.2em; /* Adjust emoji size */
+  margin-left: 5px; /* Adds spacing between the text and emoji */
+}
+.block2::after {
+  content: " 🛜"; /* Emoji to be added */
+  font-size: 1.2em; /* Adjust emoji size */
+  margin-left: 5px; /* Adds spacing between the text and emoji */
+}
+/* Responsive Layout: Stack Vertically on Small Screens */
+@media (max-width: 768px) {
+  .text-blocks {
+    flex-direction: column; /* Stack blocks vertically */
+    align-items: center; /* Center blocks vertically */
+  }
+
+  .block {
+    flex: 1 1 100%; /* Blocks take full width */
+
+  }
+}
+@media (max-width: 768px) {
+  .text-blocks2 {
+    flex-direction: column; /* Stack blocks vertically */
+    align-items: center; /* Center blocks vertically */
+  }
+
+  .text-blocks2 {
+    flex: 1 1 100%; /* Blocks take full width */
+  }
+}
+.bookinghead
+{
+  color:#08daff
+}
+.profile {
+  position: absolute; /* Position it relative to the parent container */
+  top: 60px; /* Adjust the distance from the top */
+  left: 86%; /* Position it at 50% horizontally */
+  transform: translateX(-50%); /* Center it horizontally */
+  z-index: 10; /* Ensure it appears above other elements */
+}
+
+.profile img {
+  margin-top: 70px;
+  width: 180px;  /* Set the width to a fixed value (adjust as necessary) */
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+}
+
+.profile img:hover {
+  transform: scale(1.1);  /* Enlarge logo on hover */
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.5); /* Add shadow on hover */
+}
+
+/* Optional: Adjust size for smaller screens */
+@media (max-width: 768px) {
+  .profile img {
+    width: 120px; /* Adjust logo size for mobile screens */
+  }
+}

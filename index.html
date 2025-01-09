@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-458086602"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-458086602');
+</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riverdoc</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+    /* General Styles for Fading Elements */
+    h1, .p1 {
+        opacity: 0;
+        transition: opacity 2s ease-in-out, transform 2s ease-in-out;
+        transform: translateY(20px); /* Adds slight movement */
+    }
+
+    h1.visible, p.visible {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .billboard-content {
+        margin-top: 20px;
+    }
+
+    .bookinghead {
+        color: #00fbff;
+        text-decoration: none;
+    }
+
+    .bookinghead:hover {
+        text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+<!-- Navigation -->
+<nav>
+<div class="dropdown">
+  <button class="dropdown-button">Navigation</button>
+  <ul class="dropdown-menu">
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#list">Services</a></li>
+      <li><a href="#jack">Book an Appointment</a></li>
+      <li><a href="#text-blocks2">Articles by Riverdoc</a></li>
+  </ul>
+</div>
+</nav>
+<!-- Billboard Section (Image Slider) -->
+<div class="billboard">
+  <div class="header">
+    <div class="logo">
+        <img src="Riverdoc Logo.png" alt="Logo">
+    </div>
+  </div>
+    <h1 id="fadeInHeading">Welcome to Riverdoc</h1>
+    <div class="billboard-content">
+        <p class="p1" id="fadeInParagraph">
+            Your health, convenience, and peace of mind are our priority. 
+            <a class="bookinghead" href="#jack">Book an Appointment</a>
+        </p>
+    </div>
+    </div>
+    <script>
+        // Fade in the heading and paragraph after page load
+        window.addEventListener('load', () => {
+            const heading = document.getElementById('fadeInHeading');
+            const paragraph = document.getElementById('fadeInParagraph');
+
+            // Fade in heading after 800ms
+            setTimeout(() => {
+                heading.classList.add('visible');
+            }, 800);
+
+            // Fade in paragraph after 1200ms
+            setTimeout(() => {
+                paragraph.classList.add('visible');
+            }, 1500);
+        });
+    </script>
+
+<!--About Us Section-->
+<section id="about" class="sections">
+  <h2 class = "emoji0">Overview</h2>
+  <p>The perfect doctor for your personal and occupation health needs.</p>
+            <div class="About">
+                <h2 class = "emoji1">About Us</h2>
+                <P>For over three decades, Dr. L.M Archer "Riverdoc" has been providing compassionate and comprehensive healthcare services in Colenso, South Africa. As a well-established general practitioner, The Practice offers a host of medical services, including a pharmacy, travel clinic, emergency care, as well as occupational medical care. With a passion for holistic community care, Dr. Archer "Riverdoc" strives to give his patients a one-stop medical destination, minimizing unnecessary travel.</p> 
+                  <div>    </div>
+                  <p>The practice specializes in ultrasound, dispensing, and emergency medicine, while Dr. Archer "Riverdoc" also conducts research to better understand complex issues affecting his patients.</P>
+
+<h2 class = "emoji2">Online Consulting Convenience</h2>
+<p>Too Busy, can't travel. Connect with Dr. Archer from the comfort of your home through our telephonic consultation service. Whether you need quick medical advice, a prescription refill, or guidance on your symptoms, our experienced doctor is just a call away. Enjoy hassle-free, confidential consultations tailored to your needs-anytime, anywhere. Your health, convenience, and peace of mind are our priority. Simply <a href="#jack">book an appointment</a> on our website. </p>
+<h2 class = "emoji3">Why Us</h2>  
+<p>We are committed to providing the best heathcare for you. We practice medicine for the love of the occupation and what it brings for you as a patient.</p>             
+</section>
+<div class="text-blocks">
+  <div class="block">
+    <h3>Quality Care</h3>
+    <p>Our practice values our Patients and ensures each Patient is given the needed care. We pride ourselves on taking time with our Patients.</p>
+  </div>
+  <div class="block1">
+    <h3>Experience to Consult</h3>
+    <p>With over 30 Years of Rural Practice Riverdoc has an extensive knowledge. From Family Medicine to Emergance care. </p>
+  </div>
+  <div class="block2">
+    <h3>Convenience</h3>
+    <p>We understand the demands of the Modern world, We have made avalible to you our online consulting services.</p>
+  </div>
+</div>
+        <!--Services Section-->
+        <section id="list">
+            <ul class="list">
+              <h2>Our Services</h2>
+              <li>
+                <h3>Medical aid wellness check ups</h3>
+                <p>Comprehensive wellness check-ups to monitor and maintain your health, tailored for medical aid members.</p>
+              </li>
+              <li>
+                <h3>Insurance Medicals</h3>
+                <p>Efficient and professional insurance medicals to meet policy requirements with ease.</p>
+              </li>
+              <li>
+                <h3>Travel medicine consultations / Vaccinations</h3>
+                <p>Expert travel medicine consultations and vaccinations to keep you healthy wherever you go.</p>
+              </li>
+              <li>
+                <h3>Medical Surveillance programmes</h3>
+                <p>Customized medical surveillance programs to ensure workplace health and compliance.</p>
+              </li>
+              <li>
+                <h3>Base line risk assesments</h3>
+                <p>Comprehensive baseline risk assessments to identify and mitigate potential health hazards.</p>
+              </li>
+              <li>
+                <h3>Return to work Medicals</h3>
+                <p>Seamless return-to-work medicals to ensure a safe and healthy reintegration into the workplace.</p>
+              </li>
+              <li>
+                <h3>Injury on duty Treatment</h3>
+                <p>Specialized injury-on-duty treatment to support recovery and workplace readiness.</p>
+              </li>
+              <li>
+                <h3>Injury and occupational disease management</h3>
+                <p>Comprehensive management of workplace injuries and occupational diseases for optimal recovery and compliance.</p>
+              </li>
+              <li>
+                <li>
+                  <h3>Compensation Commissioner Administration</h3>
+                  <p>Expert assistance with Compensation Commissioner administration for seamless claims and compliance.</p>
+                </li>
+                <li>
+                  <li>
+                    <h3>RTMS Compliant Driver wellness Iniatives</h3>
+                    <p>RTMS-compliant driver wellness initiatives to ensure health, safety, and compliance on the road.</p>
+                  </li>
+                  <li>
+            </ul>
+ </section>
+ <h2>Trusted by approximately 10,000 Patients</h2>
+  <div class="logo-slider">
+    <div class="logo-track">
+      <img src="tugeal-steel-logo.png" alt="Company Logo 1">
+      <img src="logo-occusure.jpg" alt="Company Logo 2">
+      <img src="logo_black.png" alt="Company Logo 3">
+      <img src="Zingela-logo.png.crdownload.png" alt="Company Logo 4">
+      <img src="tugeal-steel-logo.png" alt="Company Logo 1">
+      <img src="logo-occusure.jpg" alt="Company Logo 2">
+      <img src="logo_black.png" alt="Company Logo 3">
+      <img src="Zingela-logo.png.crdownload.png" alt="Company Logo 4">
+      <img src="tugeal-steel-logo.png" alt="Company Logo 1">
+      <img src="logo-occusure.jpg" alt="Company Logo 2">
+      <img src="logo_black.png" alt="Company Logo 3">
+      <img src="Zingela-logo.png.crdownload.png" alt="Company Logo 4">
+      <!-- Add more logos as needed -->
+    </div>
+  </div>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const track = document.querySelector('.logo-track');
+        const logos = [...track.children];
+
+        // Ensure the track is a horizontal flex container
+        track.style.display = 'flex';
+        track.style.alignItems = 'center'; // Vertically align logos
+        track.style.gap = '20px'; // Add spacing between logos
+        track.style.position = 'relative'; // Ensure correct positioning
+        track.style.willChange = 'transform'; // Optimize for animation
+
+        // Set all logos to uniform size
+        logos.forEach(logo => {
+            logo.style.width = '80px';
+            logo.style.height = 'auto'; // Maintain aspect ratio
+            logo.style.objectFit = 'contain'; // Prevent stretching
+        });
+
+        // Calculate total width of the original logos
+        const totalWidth = logos.reduce((acc, logo) => acc + logo.offsetWidth + 20, 0); // Include gap
+
+        // Duplicate logos to create a seamless effect
+        logos.forEach(logo => {
+            const clone = logo.cloneNode(true);
+            track.appendChild(clone);
+        });
+
+        let offset = 0;
+        const speed = 0.5; // Adjust this value for smoother or faster scrolling
+        let lastTimestamp = 0;
+
+        function rotateLogos(timestamp) {
+            if (!lastTimestamp) lastTimestamp = timestamp;
+            const elapsed = timestamp - lastTimestamp;
+
+            if (elapsed >= 700 / 60) { // Target 60fps
+                offset -= speed;
+                if (Math.abs(offset) >= totalWidth) {
+                    offset = 0; // Reset the offset for seamless looping
+                }
+                track.style.transform = `translate3d(${offset}px, 0, 0)`;
+                lastTimestamp = timestamp;
+            }
+
+            requestAnimationFrame(rotateLogos);
+        }
+
+        requestAnimationFrame(rotateLogos);
+    });
+</script>
+
+
+
+</script src="script.js"></script>
+        <!--Contact Section-->
+        
+<footer class="foot1" id="jack">
+  <img class="jack" src="Plane Image.jpg" autoplay loop muted playsinline>
+</img>
+<!-- Google Calendar Appointment Scheduling begin -->
+<link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
+<script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
+<script>
+(function() {
+  var target = document.currentScript;
+  window.addEventListener('load', function() {
+    calendar.schedulingButton.load({
+      url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ25IQ96KU2QVdgIT3tIBLOq4mJeTWwWKV9ntXzgMwlYoPmUgDSt5MV9ebx4WmRA3JI9SUju_TRs?gv=true' ,
+      color: '#0056b3',
+      label: 'Book an Appointment',
+      target,
+    });
+
+    // Delay interaction setup to ensure the button is loaded
+    setTimeout(function() {
+      const buttonContainer = document.querySelector('.calendar-scheduling-button');
+      if (buttonContainer) {
+        // Add hover effects
+        buttonContainer.addEventListener('mouseover', function() {
+          buttonContainer.style.transform = 'scale(1.1)';
+          buttonContainer.style.boxShadow = '0 8px 16px rgba(0, 0, 0, 0.2)';
+        });
+
+        buttonContainer.addEventListener('mouseout', function() {
+          buttonContainer.style.transform = 'scale(1)';
+          buttonContainer.style.boxShadow = 'none';
+        });
+
+        // Add click event
+        buttonContainer.addEventListener('click', function() {
+          console.log('Book an Appointment button clicked!');
+        });
+      } else {
+        console.error('Button not found. Ensure the calendar script loaded correctly.');
+      }
+    }, 500); // Adjust delay if necessary
+  });
+})();
+</script>
+
+</footer>
+<h2 id="text-blocks2">Articles by Riverdoc</h2>
+<div class="text-blocks2">
+  <div class="block21">
+    <h3>Professional Portfolio</h3>
+    <p>My medical training started at the age of 18 years in Zimbabwe (then Rhodesia). I spent a year in active combat as an army medic, which led me into the field of medicine.<a href="professional-portfolio.html" class="view-more">View More</a></p>
+  </div>
+  <div class="block22">
+    <h3>Value in our Lives</h3>
+    <p>Often when patients are asked, “what is their main priority in life?” this is the answer. There are relationships such as “Romeo and Juliet”, a Shakespearian tragedy in which a love is of such intensity that it may be the will to live.<a href="valuelife.html" class="view-more">View More</a></p>
+  </div>
+  <div class="block23">
+    <h3>Staying healthy</h3>
+    <p>Illness is part of life! On average a person who lives 72yrs can expect to be suffering from ill health approximately 11yrs.<a href="stayinghealthy.html" class="view-more">View More</a></p>
+  </div>
+</div>
+
+<!-- Google Maps -->
+<footer id="contact" class="footer">
+    <h2>Contact us</h2>
+    <p>Email: <a href="mailto:Riverdoc@mweb.co.za">Riverdoc@mweb.co.za</a></p>
+    <p>Phone: <a href="tel:0364222369">036 422 2369</a></p>
+    <p>Facebook: <a href="https://www.facebook.com/profile.php?id=100091328839732">Lawrence Archer</a></p>
+<h2>Our Office</h2>
+  <div class="map-container">
+    <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3498.3013713152022!2d29.826301000000004!3d-28.7404177!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ef235afd63905a7%3A0x3688d08db775e4d0!2sDr%20L.M%20Archer%20Riverdoc!5e0!3m2!1sen!2sza!4v1735819717195!5m2!1sen!2sza" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+
+  <div class="footer-credits">
+    <p>
+      Designed and maintained by <a href="https://alphaventures.shop/">Alpha Ventures Group</a>. 
+      © 2025 All Rights Reserved.
+    </p>
+  </div>
+</footer>
+
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const links = document.querySelectorAll('a');
+
+        links.forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault(); // Prevent default navigation
+                const href = link.getAttribute('href');
+
+                // Apply fade-out effect
+                document.body.classList.add('fade-out');
+
+                // Wait for animation before navigating
+                setTimeout(() => {
+                    window.location.href = href;
+                }, 500); // Match transition duration
+            });
+        });
+    });
+</script>
+</body>
+
+</html>
