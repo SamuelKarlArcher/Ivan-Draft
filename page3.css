@@ -1,0 +1,254 @@
+.generalqq {
+    position: fixed; /* Fix the container at the top */
+    top: 0; /* Align to the top of the viewport */
+    left: 0; /* Align to the left edge of the viewport */
+    width: 100%; /* Occupy the full width of the page */
+    z-index: 100; /* Ensure it stays above other elements */
+    background-color: #000000; /* Background for the navigation container */
+    padding-bottom: 10px;
+  }
+  p {
+    max-width: 600px; /* Set the maximum width of the paragraph */
+    margin: 0 auto;   /* Center the paragraph horizontally */
+    line-height: 1.6; /* Improve readability with adequate line spacing */
+}
+  .dropdownqq {
+    position: relative; /* Position relative for the dropdown menu alignment */
+    text-align: center; /* Center-align the button inside the container */
+  }
+  
+  .dropdown-buttonqq {
+    display: block; /* Make the button span the entire line */
+    width: 100%; /* Ensure the button spans the entire width of the container */
+    background-color: #bc840b; /* Gold color for button */
+    color: rgb(0, 0, 0);
+    padding: 10px 0; /* Add vertical padding for better appearance */
+    font-size: 16px;
+    border: none;
+  
+    cursor: pointer;
+    border-radius: 0; /* Remove border radius for a clean full-width style */
+  }
+  
+  .dropdown-buttonqq:hover {
+    background-color: #af7518; /* Darker gold on hover */
+  }
+  
+  .dropdown-menuqq {
+    display: none; /* Hidden by default */
+    position: absolute; /* Position relative to the button */
+    background-color: #ffffff;
+    width: 100%; /* Match the button's width */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Add shadow for better visibility */
+    list-style: none; /* Remove list bullets */
+    padding: 0; /* Remove padding from the list */
+    margin: 0; /* Remove margin */
+    border-radius: 0; /* Match the rectangular style */
+    left: 0; /* Align with the button */
+  }
+  
+  .dropdown-menuqq li {
+    padding: 10px 16px; /* Add padding for clickable items */
+    text-align: left; /* Align text to the left */
+  }
+  
+  .dropdown-menuqq li a {
+    text-decoration: none; /* Remove underline */
+    color: #333; /* Text color */
+    display: block; /* Make the link block-level for easy clicking */
+    text-transform: none; /* Ensure the text is displayed as written */
+  }
+  
+  .dropdown-menuqq li a:hover {
+    background-color: #f1f1f1; /* Highlight link on hover */
+  }
+  
+  .dropdownqq:hover .dropdown-menuqq {
+    display: block; /* Show the dropdown menu when hovering over the button */
+  }
+  body {
+    font-family: "lato", sans-serif; /* Default font */
+    font-size: 17px;
+    color: #0d0c0c; /* Default text color */
+    line-height: 1.6; /* Improves readability */
+    background-color: white; /* Light gray background */
+    padding: 20px; /* Adds padding around the content */
+    text-align: center; /* Ensures text is centered */
+    justify-content: center;
+    align-items: center;
+}
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+margin-bottom: 15px;
+color: #222; /* Darker color for headings */
+}
+
+h1 {
+font-size: 3.em;
+}
+
+h2 {
+font-size: 2.em;
+}
+
+h3 {
+font-size: 1.em;
+}
+/* Logo container */
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 50px;
+}
+.logo:hover {
+  transform: scale(1.1); /* Slightly enlarge on hover */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add a shadow */
+  cursor: pointer; /* Indicate interactivity */
+}
+
+/* Logo image styling */
+.logo {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+    border-radius: 10px; /* Optional: Rounded edges for a modern look */
+}
+.Modular {
+    width: 100%; /* Set the image width to 100% of its container */
+    height: auto; /* Maintain the image's aspect ratio */
+    display: block; /* Ensure the image is treated as a block element (removes extra space below) */
+    margin: 0 auto;  /* Remove any default margin */
+    padding: 0; /* Remove any padding */
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 20px;
+    max-width: 800px;
+}
+.Modular {
+  width: 100%; /* Adjust based on the desired size */
+  transition: transform 0.3s ease-in-out;
+  transform-origin: center center; /* Default zoom point (center) */
+}
+
+.Modular:hover {
+  transform: scale(1.5); /* Zoom effect */
+  transition: none; /* Disable transition while zooming */
+}
+
+
+.table {
+  width: 100%; /* Make table take the full width of the container */
+  border-collapse: collapse;
+  margin-top: 20px;
+  max-width: 800px; /* Limit the maximum width */
+  margin: 0 auto; /* Center the table horizontally */
+  overflow-x: auto; /* Enable horizontal scrolling for smaller screens */
+  display: block; /* Makes the table scrollable on small devices */
+}
+
+.table td {
+  border: 1px solid #000;
+  padding: 10px;
+  text-align: center;
+  font-size: 1rem; /* Default font size */
+}
+
+.table tr:nth-child(even) {
+  background-color: #f2f2f2; /* Light gray for even rows */
+}
+
+.table tr:hover {
+  background-color: #ddd; /* Highlight row on hover */
+  cursor: pointer;
+}
+
+/* Responsive Design: Adjust for smaller screens */
+@media (max-width: 768px) {
+  .table td {
+    font-size: 0.9rem; /* Slightly smaller font for compact view */
+    padding: 8px; /* Reduce padding */
+  }
+}
+
+@media (max-width: 480px) {
+  .table {
+    max-width: 100%; /* Remove fixed max-width for very small screens */
+  }
+
+  .table td {
+    font-size: 0.8rem; /* Further reduce font size */
+    padding: 5px; /* Compact padding */
+  }
+}
+
+  .h111 {
+    margin-top: 15px; /* Reset top margin for centering */
+    font-size: 1.5rem; /* Adjust font size */
+    color: #322f2f; /* Heading text color */
+    white-space: nowrap; /* Prevent wrapping */
+    text-align: center; /* Center-align the heading text */
+    font-weight: bold; /* Make the text bold */
+  }
+.h1111 {
+  margin-top: 0; /* Reset top margin for centering */
+  font-size: 2rem; /* Adjust font size */
+  color: #322f2f; /* Heading text color */
+  white-space: nowrap; /* Prevent wrapping */
+  text-align: center; /* Center-align the heading text */
+  font-weight: bold; /* Make the text bold */
+  
+  /* Centering the element */
+  display: flex; /* Enable Flexbox */
+  justify-content: center; /* Horizontally center */
+  align-items: center; /* Vertically center */
+  height: 100px; /* Take full height of the viewport */
+  width: 100vw; /* Take full width of the viewport */
+  /* Media query for smaller screens */
+}
+  @media (max-width: 768px) {
+  .h1111 {
+    font-size: calc(1rem + 1vw); /* Slightly smaller font size for smaller screens */
+    white-space: normal; /* Allow wrapping for better fit on small screens */
+    padding: 0 10px; /* Add padding for smaller screen content fit */
+  }
+}
+  /* Basic footer styling */
+  footer {
+    background-color: #0e0d0a; /* Dark background */
+    color: white;           /* White text color */
+    padding: 40px 20px;     /* Padding inside the footer */
+    text-align: center;     /* Center the text */
+    border-radius: 20px;
+}
+  footer {
+    margin-top: 40px;  /* Adjust this value to increase or decrease the space */
+  }
+  
+  footer h2 {
+    font-size: 1.8rem;      /* Larger heading */
+    margin-bottom: 20px;/* Space below the heading */
+    color: #ddd;    
+  }
+  
+  footer p {
+    font-size: 1rem;        /* Standard font size for paragraphs */
+    margin: 10px 0;         /* Space between each paragraph */
+  }
+  
+  footer a {
+    color: #efc05a;         /* Blue color for links */
+    text-decoration: none;  /* Remove underline from links */
+  }
+  
+  footer a:hover {
+    text-decoration: underline; /* Underline links on hover */
+  }
+  .Warrenty
+  {
+    width: 200px;
+    position: relative;
+    padding-bottom: 30px;
+
+  }
+
