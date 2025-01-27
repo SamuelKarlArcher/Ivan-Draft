@@ -1,0 +1,1123 @@
+/* General css Layout */
+body {
+        font-family: "lato", sans-serif; /* Default font */
+        font-size: 17px;
+        color: #000000; /* Default text color */
+        line-height: 1.6; /* Improves readability */
+        background-color: rgb(0, 0, 0); /* Light gray background */
+        padding: 0px; /* Adds padding around the content */
+        overflow-x: hidden;
+      text-align: left;
+      margin-left: 10px;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  margin-left: 2%;
+    margin-bottom: 15px;
+    color: rgb(15, 120, 113); /* Darker color for headings */
+  }
+  
+  h1 {
+    font-size: 3.em;
+  }
+  
+  h2 {
+    font-size: 2.em;
+    color: black;
+  }
+  
+  h3 {
+    font-size: 1.em;
+  }
+
+/* General Layout */
+.container {
+    max-width: 100%; /* Restricts content width */
+
+    text-align: left;
+}
+
+/* Links */
+a {
+    color: rgb(0, 17, 255); /* Blue color for links */
+    transition: color 0.3s ease; /* Smooth color transition */
+    text-decoration: none; /* Removes the underline */
+  }
+  
+a:hover {
+    color: #00aeff;; /* Darker blue on hover */
+}
+a:hover, a:focus {
+  color: #00aeff;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: transform 0.3s ease-in-out;
+  z-index: 1100; /* Ensure it's above other elements */
+}
+/* Navigation styling */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+nav ul li {
+    padding: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(206, 2, 2);
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover effect for the links */
+nav ul li a:hover {
+    color: #4400ff;
+    transform: translateY(-5px);
+}
+
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    h1 {
+        margin-bottom: 20px;
+    }
+/*list*/
+
+/* Styling for the services section */
+
+.list {
+  display: flex;
+  flex-direction: column; /* Align child elements vertically */
+  padding: 20px;
+  text-align: center;
+  align-items: center;
+  background-color: #f3f5f7; /* Background color */
+  border-radius: 0px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  list-style-type: none; /* Removes bullet points */
+  border: 1px solid #ddd;
+  max-width: 100%; /* Restrict the width for readability */
+}
+
+.list p {
+  text-align: center; /* Ensures paragraph text is centered */
+  width: 100%; /* Ensure the paragraph takes up the full width */
+}
+
+.list h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #3a6a8b;
+}
+
+.emoji0 {
+  font-size: 2rem;
+}
+
+.list li h3 {
+  font-size: 1.5rem;
+  color: #333; /* Dark text color */
+}
+
+.list li p {
+  font-size: 1rem;
+  color: #555; /* Lighter text color for descriptions */
+}
+
+.list li:hover {
+  background-color: #d1d5d7; /* Light blue background on hover */
+  border-color: #dead4b; /* Blue border on hover */
+  transition: background-color 0.3s, border-color 0.3s; /* Smooth transition */
+  cursor: pointer;
+}
+
+.list :hover {
+  color: #000000;
+}
+
+.list :focus {
+  color: #000000;
+}
+
+  /* Basic footer styling */
+/* Basic footer styling */
+/* Basic footer styling */
+.footer {
+  padding: 0;
+  overflow: hidden;
+  line-height: 1.6;
+  background-color: rgb(0, 62, 112); /* Dark background */
+  color: white;              /* White text color */
+  padding: 40px 20px;        /* Padding inside the footer */
+    /* Center the text */
+  cursor: pointer;
+  width: 100%;      /* Full width of the screen */
+  box-sizing: border-box;    /* Prevent padding from overflowing */
+  display: flex;             /* Use flexbox for vertical centering */
+  flex-direction: column;    /* Stack elements vertically */
+  align-items: center; 
+  margin: 0;  
+  margin-left: 0;    /* Center elements horizontally */
+}
+
+/* Footer headings (h2) */
+footer h2 {
+  font-size: 1.8rem;         /* Larger font size for headings */
+  margin-bottom: 20px;       /* Space below the headings */
+  color: rgb(15, 120, 113);;               /* Lighter color for headings */
+  text-align: center;        /* Ensure heading is centered */
+}
+
+/* Footer paragraphs */
+footer p {
+  font-size: 1rem;           /* Standard font size for paragraphs */
+  margin: 5px 0;            /* Space between paragraphs */
+  text-align: center;        /* Center the text */
+  width: 100%;               /* Ensure they take full width */
+  display: inline-block;     /* Ensure they are treated like block-level elements */
+}
+
+/* Container for the map */
+.map-container iframe {
+  overflow: hidden;
+  width: 100%;               /* Make iframe responsive */
+  height: 400px;             /* Set a fixed height for the map */
+  border: 0;                 /* Remove border around the iframe */
+  margin-top: 20px;          /* Space above the map */
+}
+
+/* Footer credits */
+.footer-credits p {
+  font-size: 0.9rem;         /* Smaller text for credits */
+  margin-top: 20px;          /* Space above the credits text */
+}
+
+/* Footer links */
+footer a {
+  color: #cdcdcd;            /* Light color for links */
+  text-decoration: none;     /* Remove underline from links */
+}
+
+/* Hover effect on footer links */
+footer a:hover {
+  text-decoration: underline; /* Underline links on hover */
+}
+
+/* Responsive Fix for Mobile */
+@media (max-width: 768px) {
+  footer {
+      padding: 20px 10px; /* Reduce padding on smaller screens */
+  }
+
+  footer h2 {
+      font-size: 1.5rem;   /* Reduce heading font size on mobile */
+  }
+
+  footer p {
+      font-size: 0.9rem;   /* Smaller font size for paragraphs on mobile */
+  }
+
+  .map-container iframe {
+      height: 300px;        /* Reduce map height on smaller screens */
+  }
+}
+
+  
+
+/* Navigation links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #f39c12;
+}
+
+
+
+
+/* For High-DPI (Retina) Displays */
+@media (min-resolution: 2dppx) {
+  .jack {
+    background-size: cover; /* Ensure smooth scaling for high-resolution displays */
+  }
+}
+
+
+
+  /* Responsive Design: Make the footer elements stack on smaller screens */
+  @media (max-width: 768px) {
+    footer {
+      padding: 30px 10px;  /* Adjust padding for smaller screens */
+    }
+  
+    footer h2 {
+      font-size: 1.5rem;    /* Smaller heading font size */
+    }
+  
+    footer p {
+      font-size: 0.9rem;    /* Smaller text size for paragraphs */
+    }
+    .general {
+      position: relative; /* Ensure proper positioning context */
+  }
+  
+  .general {
+      position: relative; /* Avoid overlap */
+      z-index: 1; /* Stack items correctly */
+      margin-bottom: 50px;
+      float: right;
+  }
+  }  
+  .p {
+    margin-left: 2%;
+    text-align: left;
+    max-width: 800px; /* Set the maximum width of the paragraph */
+
+  }
+
+
+.bookinlink
+{
+  text-decoration: underline;
+  color: #000154;
+}
+
+.map-container {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+
+/* Add slight animation for overall smoothness */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+
+
+
+
+/* Navigation menu styling */
+
+/* General Styles */
+
+/* Billboard Container */
+
+
+/* Header Section */
+.header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  z-index: 10;
+}
+
+
+
+
+/* Navigation Menu */
+
+.dropdown {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: transform 0.3s ease-in-out;
+  z-index: 1000;
+
+}
+
+/* Dropdown Button */
+.dropdown-button {
+  font-weight: bold;
+  width: 100%;
+  background-color: #000000;  /* Gold color for the button */
+  color: rgb(255, 255, 255);
+  padding: 10px 0;  /* Add vertical padding for better appearance */
+  font-size: 16px;
+  width: 100%;  /* Ensure the button spans the entire width */
+  border: none;
+  cursor: pointer;
+  position: relative;
+  text-align: center;  /* Center the text inside the button */
+  border-radius: 0;  /* Clean, full-width style */
+  box-sizing: border-box;  /* Prevent padding from affecting the button's width */
+}
+
+.dropdown-button:hover {
+  background-color: #0e1da9; /* Darker gold on hover */
+}
+
+.dropdown-menu {
+  display: none; /* Hidden by default */
+  position: relative; /* Position relative to the button */
+  background-color: #ffffff;
+  width: 100%; /* Match the button's width */
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Add shadow for better visibility */
+  list-style: none; /* Remove list bullets */
+  padding: 0; /* Remove padding from the list */
+  margin: 0; /* Remove margin */
+  border-radius: 0; /* Match the rectangular style */
+  left: 0; /* Align with the button */
+  text-transform: none; /* Ensure the text is displayed as written */
+  z-index: 1000;
+}
+
+.dropdown-menu li {
+  padding: 10px 16px; /* Add padding for clickable items */
+  text-align: center; /* Align text to the left */
+}
+
+.dropdown-menu li a {
+  text-decoration: none; /* Remove underline */
+  color: #333; /* Text color */
+  display: block; /* Make the link block-level for easy clicking */
+  text-transform: none; /* Ensure the text is displayed as written */
+}
+
+.dropdown-menu li a:hover {
+  background-color: #f1f1f1; /* Highlight link on hover */
+}
+
+.dropdown:hover .dropdown-menu {
+  width: 100%;
+  display: block; /* Show the dropdown menu when hovering over the button */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .dropdown {
+    display: block;              /* Stack the dropdown in smaller screens */
+    width: 100%;                 /* Make the dropdown width 100% on small screens */
+  }
+
+  .dropdown-menu {
+    position: static;            /* Make the dropdown menu stack below the button */
+    width: 100%;                 /* Make the dropdown menu take up the full width */
+  }
+}
+
+/* Container for the content and image */
+.billboard-content {
+
+  background-color: #000000;
+  position: relative;
+  bottom: 10%; /* Adjust position from bottom for responsiveness */
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex; /* Flexbox container */
+  align-items: left; /* Vertically center content and image */
+  justify-content: space-between; /* Space between text and image */
+  color: #ffffff;
+  width: 100%; /* Limit width of the container */
+  max-width: 100%; /* Prevent container overflow */
+
+  box-sizing: border-box; /* Include padding in total width */
+  overflow: hidden; /* Prevent overflow */
+  height: 100vh;
+  text-align: left;
+  z-index: 1;
+}
+
+/* Wrapper for text elements */
+.text-wrapper {
+  margin-left: 20px;
+  margin-left: 5%;
+  display: flex;
+  flex-direction: column; /* Stack text elements vertically */
+  align-items: flex-start; /* Align text to the left */
+  justify-content: center; /* Center text vertically */
+  width: 50%; /* Set a fixed width for the text wrapper */
+}
+
+/* Text content styles */
+.billboard-content h1 {
+  font-size: 5vw; /* Responsive font size */
+  margin-bottom: 10px; /* Adjust margin */
+  word-wrap: break-word; /* Prevent text overflow */
+  white-space: normal; /* Allow text to wrap */
+}
+
+.billboard-content p {
+  font-size: 3vh; /* Responsive font size, increased for readability */
+  word-wrap: break-word; /* Prevent text overflow */
+  white-space: normal; /* Allow text to wrap */
+  max-width: 90%; /* Set a max-width for paragraphs */
+  overflow-wrap: break-word; /* Ensure text breaks correctly */
+  line-height: 1.5; /* Improve readability */
+  text-align: left;
+}
+
+/* Image styling */
+.think {
+  width: 50%; /* Set the width of the image */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Cover the container without distortion */
+  max-height: 50%; /* Prevent the image from exceeding container height */
+  z-index: 1000;
+  float: right;
+  margin-top: 200px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .billboard-content {
+    bottom: 15%; /* Adjust position for smaller screens */
+    flex-direction: column; /* Stack text and image vertically on smaller screens */
+    align-items: center; /* Center align vertically stacked items */
+    padding: 0 10px; /* Adjust padding on smaller screens */
+  }
+
+  .think {
+    width: 100%; /* Adjust image width on small screens */
+    margin-top: 20px; /* Add space between text and image */
+    max-width: 100%; /* Ensure image doesn't exceed container */
+  }
+
+  .billboard-content h1 {
+    font-size: 5vw; /* Larger font size for smaller screens */
+    margin-top: 20px;
+  }
+
+  .billboard-content p {
+    font-size: 3vw; /* Increase font size for readability on smaller screens */
+    max-width: 100%; /* Allow paragraph to use full width */
+  }
+}
+
+@media (max-width: 480px) {
+  .billboard-content {
+    bottom: 100%; /* Further adjust position */
+    padding: 0 5px; /* Adjust padding for very small screens */
+  }
+
+  .billboard-content h1 {
+    font-size: 9vw; /* Larger font size for very small screens */
+    margin-top: 100px;
+    line-height: 120%;
+  }
+
+  .billboard-content p {
+    font-size: 4vw; /* Increase font size even more */
+    max-width: 100%; /* Allow paragraph to use full width */
+  }
+
+  .think {
+height: 35vh;
+  }
+}
+
+
+
+
+/* Container for Text Blocks */
+.text-blocks {
+
+  height:auto;
+  display: flex; /* Arrange blocks horizontally */
+  gap: 20px; /* Space between blocks */
+  justify-content: center; /* Center blocks horizontally within the container */
+  align-items: stretch; /* Align blocks vertically (optional, for uniform height) */
+}
+
+
+/* Individual Block Styles */
+.block {
+  background-color: #ffffff; /* White background */
+  border: 1px solid #ddd; /* Light gray border */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  padding: 20px;
+  height: auto;
+  width: 80%; /* Fixed width for each block */
+  text-align: center;
+  flex: 1;
+  transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover effects */
+}
+.p1
+{
+  text-align: right;
+  color: #ffffff;
+}
+.p1:hover
+{
+  color: white;
+}
+.block1 {
+  flex: 1;
+  background-color: #ffffff; /* White background */
+  border: 1px solid #ddd; /* Light gray border */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  padding: 20px;
+  height: auto;
+  width: 80%; /* Fixed width for each block */
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover effects */
+}
+.block2 {
+  flex: 1;
+  background-color: #ffffff; /* White background */
+  border: 1px solid #ddd; /* Light gray border */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  padding: 20px;
+  height: auto;
+  width: 80%; /* Fixed width for each block */
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover effects */
+}
+/* Individual Block Styles */
+
+/* Hover Effects */
+.block:hover {
+  transform: scale(1.05); /* Slightly enlarge on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+}
+/* Hover Effects */
+.block1:hover {
+  transform: scale(1.05); /* Slightly enlarge on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+}
+/* Hover Effects */
+.block2:hover {
+  transform: scale(1.05); /* Slightly enlarge on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+}
+
+/* Headings */
+.block h3 {
+  margin: 0 0 10px;
+  font-size: 1.5rem;
+  color: #222;
+}
+
+.block1 h3 {
+  margin: 0 0 10px;
+  font-size: 1.5rem;
+  color: #222;
+}
+
+.block2 h3 {
+  margin: 0 0 10px;
+  font-size: 1.5rem;
+  color: #222;
+}
+/* Headings Article Blocks */
+
+
+/* Paragraphs */
+.block p {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+.block1 p {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+/*Paragraphs Article Blocks */
+.block2 p {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+
+.block::after {
+
+  font-size: 1.2em; /* Adjust emoji size */
+
+}
+.block1::after {
+  font-size: 1.2em; /* Adjust emoji size */
+
+}
+.block2::after {
+  font-size: 1.2em; /* Adjust emoji size */
+
+}
+/* Responsive Layout: Stack Vertically on Small Screens */
+@media (max-width: 768px) {
+  .text-blocks {
+    flex-direction: column; /* Stack blocks vertically */
+    align-items: center; /* Center blocks vertically */
+  }
+
+  .block {
+    flex: 1 1 100%; /* Blocks take full width */
+
+  }
+}
+
+
+
+.bookinghead
+{
+  color:#08daff
+}
+.profile {
+  position: absolute; /* Position it relative to the parent container */
+  top: 60px; /* Adjust the distance from the top */
+  left: 86%; /* Position it at 50% horizontally */
+  transform: translateX(-50%); /* Center it horizontally */
+  z-index: 10; /* Ensure it appears above other elements */
+}
+
+.profile img {
+  margin-top: 70px;
+  width: 180px;  /* Set the width to a fixed value (adjust as necessary) */
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+}
+
+.profile img:hover {
+  transform: scale(1.1);  /* Enlarge logo on hover */
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.5); /* Add shadow on hover */
+}
+
+/* Optional: Adjust size for smaller screens */
+@media (max-width: 768px) {
+  .profile img {
+    width: 120px; /* Adjust logo size for mobile screens */
+  }
+}
+.sections {
+  position: relative; /* Positioning context for child elements */
+  overflow: hidden; /* Prevent content from spilling outside */
+  background-color: #ffffff;
+  display: flex; /* Flexbox for layout */
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+  align-items: flex-start; /* Align items to the top */
+  justify-content: space-between; /* Space between text and images */
+
+  gap: 20px; /* Space between items */
+ 
+}
+
+
+
+.text-wrapper1 {
+width: 100%;
+display: block;
+
+}
+
+.sections p {
+  max-width: 800px;
+  font-size: 2.1vh; /* Responsive font size */
+  line-height: 1.5; /* Improve readability */
+  overflow-wrap: break-word; /* Allow word breaking */
+  margin: 20px;
+margin: 10px;
+
+}
+
+.sections p {
+  margin-left: 6%; /* Adjust the value as needed */
+}
+
+.prof{
+  float: right; /* Keep the images aligned to the right */
+  height: auto; /* Maintain aspect ratio */
+  max-width: 30%; /* Optional: Set a maximum width */
+  max-height: 30%; /* Optional: Set a maximum height */
+  object-fit: cover; /* Ensure the image covers its set dimensions without distortion */
+  border-radius: 10px;
+  margin-bottom: 20px;
+  position: relative;
+  margin-top: -60px;
+
+  transition: color 0.3s, transform 0.3s; /* Smooth transitions */
+}
+.prof:hover
+{
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+
+
+/* Responsive adjustments */
+
+
+
+.sectionvalue
+{
+  position: relative; /* Positioning context for child elements */
+  overflow: hidden; /* Prevent content from spilling outside */
+  background-color: #ffffff;
+  display: flex; /* Flexbox for layout */
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+  align-items: flex-start; /* Align items to the top */
+  justify-content: space-between; /* Space between text and images */
+  padding: 20px; /* Padding around content */
+  gap: 20px; /* Space between items */
+}
+.sectionvalue ul {
+  font-size: 2.1vh; /* Responsive font size */
+  line-height: 1.5; /* Improve readability */
+  max-width: 100%; /* Ensure text doesn’t overflow */
+  overflow-wrap: break-word; /* Allow word breaking */
+  margin: 20px;
+
+}
+
+
+
+.value-list li {
+  font-size: 2.5vh; /* Responsive font size */
+  color: #333; /* Text color */
+  background: #f5f5f5; /* Light background for each item */
+  border: 1px solid #ddd; /* Optional: Add borders for emphasis */
+  border-radius: 5px; /* Optional: Rounds the corners */
+  padding: 1rem; /* Adjust padding for better scaling */
+  margin-bottom: 1rem; /* Adds space between items */
+  display: flex; /* Align items horizontally */
+  align-items: center; /* Vertically center content */
+  gap: 10px; /* Space for an icon, if needed */
+  justify-content: center; /* Center text horizontally */
+  transition: background 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
+}
+
+.value-list li:hover {
+  background: #e8f4fa; /* Changes background on hover */
+  cursor: pointer; /* Adds a pointer cursor for interactivity */
+  transform: scale(1.02); /* Slightly enlarge on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .value-list li {
+    font-size: 2vh; /* Decrease font size for smaller screens */
+    padding: 0.8rem; /* Adjust padding */
+    margin-bottom: 0.8rem; /* Reduce spacing between items */
+  }
+}
+
+@media (max-width: 480px) {
+  .value-list li {
+    font-size: 1.8vh; /* Smaller font for very small screens */
+    padding: 0.6rem; /* Compact padding */
+    margin-bottom: 0.6rem; /* Closer spacing */
+  }
+  .text-blocks .block
+  {
+    flex: 1 1 100%; /* Blocks take full width */
+
+  }
+  .text-blocks .block1
+  {
+    flex: 1 1 100%; /* Blocks take full width */
+
+  }
+  .text-blocks .block2
+  {
+    flex: 1 1 100%; /* Blocks take full width */
+
+  }
+}
+:root {
+  --total-brand:4 ;
+  --logo-width: 12rem;
+  --total-logo-width: calc(var(--total-brand) * var(--logo-width));
+  --animation-duration: calc(var(--total-brand) * 2s);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.slider {
+  position: relative;
+padding: 0;
+  height: 12rem;
+  background-color: rgb(207, 207, 207); /* Light gray background */
+  display: flex;
+  align-items: center;
+overflow: hidden;
+}
+
+.slider .brands {
+  list-style: none;
+  width: var(--total-logo-width);
+  display: flex;
+  animation: slideleft var(--animation-duration) linear infinite;
+}
+
+@keyframes slideleft {
+  0% {
+    transform: translateX(0); /* Start aligned at the left */
+  }
+  100% {
+    transform: translateX(calc(-100% / 2)); /* Animate left */
+  }
+}
+
+
+.brand li.brand-logo {
+  width: var(--total-logo-width);
+  font-size: 2rem;
+  text-align: center;
+  margin-left: 2rem;
+}
+
+.slider::before,
+.slider::after {
+  width: var(--logo-width);
+  position: absolute;
+  content: "";
+  height: 100%;
+}
+
+.slider::before {
+  left: 0;
+}
+
+.slider::after {
+  right: 0;
+
+}
+.slider:hover .brands {
+  animation-play-state: paused;
+}
+.pq
+{
+  margin-left: 20px;
+  display: flex;
+  align-content: center;
+text-align: center;
+float: right;
+}
+.pq h2
+{
+  display: inline; /* Makes the heading display inline */
+  margin: 0;
+  padding: 0;
+}
+.p3
+{
+text-align: left;
+}
+/* Styles for medium to large screens (up to 2000px wide) */
+@media (max-width: 2500px) {
+
+.prof22{
+display: one;
+  }
+}
+@media (max-width: 2000px) {
+.sections .text-overlay
+{
+    z-index: 1000;
+    position: absolute; /* Allows precise positioning over the image */
+    top: 18%; /* Adjust vertical position (50% = center) */
+    left: 75%; /* Adjust horizontal position (50% = center) */
+    transform: translate(-50%, -50%); /* Centers the text exactly */
+    color: black; /* Text color for contrast */
+    background-color:rgb(232, 252, 255); /* Semi-transparent background for readability */
+    padding: 10px; /* Adds padding around the text */
+    border-radius: 8px; /* Optional: Rounded corners */
+    text-align: center; /* Centers the text inside the overlay */
+    font-size: 1rem; /* Adjust text size */
+  }
+ 
+}
+
+
+
+/* Styles for small screens (up to 480px wide) */
+@media (max-width: 1200px) {
+  .pq {
+    display: block; /* Retains block display for the .pq class */
+  }
+  .p3 {
+    text-align: center; /* Keep text centered for smaller screens */
+  }
+  .prof
+  {
+    margin-left: 10px;
+    display: none;
+  }
+  .prof1 {
+    max-width: 100%
+  }
+  .text-blocks .prof22
+  {
+    display: none;
+  }
+ 
+}
+.text-wrapper .p {
+  flex-grow: 1; /* Allows the text to take the remaining space */
+  text-align: justify; /* Optional: Justify the text */
+  font-family: "lato", sans-serif; /* Default font */
+  font-size: 20px;
+  color: #000000; /* Default text color */
+  line-height: 1.6; /* Improves readability */
+  transition: color 0.3s, transform 0.3s; /* Smooth transitions */
+}
+
+.p:hover {
+  color: #1DA1F2; /* Change text color on hover */
+  transform: scale(1.05); /* Slightly enlarge the paragraph */
+}
+
+@media (max-width: 750px) {
+  .sections {
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center-align items */
+    font-family: "lato", sans-serif; /* Default font */
+    font-size: 17px;
+    color: #000000; /* Default text color */
+    line-height: 1.6; /* Improves readability */
+    transition: color 0.3s, transform 0.3s; /* Smooth transitions */
+  }
+
+  .text-wrapper1 {
+    width: 100%; /* Full width for smaller screens */
+    text-align: center; /* Center-align text */
+    font-family: "lato", sans-serif; /* Default font */
+    font-size: 17px;
+    color: #000000; /* Default text color */
+    line-height: 1.6; /* Improves readability */
+
+  }
+ .sections .prof1 
+  {
+    max-width: 100%
+  }
+  .block .prof22
+  {
+    display: none;
+  }
+  .sections .text-overlay
+  {
+    z-index: 1000;
+    position: absolute; /* Allows precise positioning over the image */
+    left: 50%; /* Adjust horizontal position (50% = center) */
+    transform: translate(-50%, -50%); /* Centers the text exactly */
+    color: black; /* Text color for contrast */
+    background-color:rgb(232, 252, 255); /* Semi-transparent background for readability */
+    padding: 10px; /* Adds padding around the text */
+    border-radius: 8px; /* Optional: Rounded corners */
+    text-align: center; /* Centers the text inside the overlay */
+    font-size: 1rem; /* Adjust text size */
+  }
+  .p:hover {
+    color: #1DA1F2; /* Change text color on hover */
+    transform: scale(1.05); /* Slightly enlarge the paragraph */
+  }
+}
+
+.text-overlay {
+  z-index: 1000;
+  position: absolute; /* Allows precise positioning over the image */
+  top: 18%; /* Adjust vertical position (50% = center) */
+  left: 50%; /* Adjust horizontal position (50% = center) */
+  transform: translate(-50%, -50%); /* Centers the text exactly */
+  color: black; /* Text color for contrast */
+  background-color:rgb(232, 252, 255); /* Semi-transparent background for readability */
+  padding: 10px; /* Adds padding around the text */
+  border-radius: 8px; /* Optional: Rounded corners */
+  text-align: center; /* Centers the text inside the overlay */
+  font-size: 1rem; /* Adjust text size */
+}
+
+.prof1{
+  float: right; /* Keep the images aligned to the right */
+  height: auto; /* Maintain aspect ratio */
+  max-width: 50%; /* Optional: Set a maximum width */
+  max-height: 50%; /* Optional: Set a maximum height */
+  object-fit: cover; /* Ensure the image covers its set dimensions without distortion */
+  border-radius: 10px;
+margin-top: 20px;
+  position: relative;
+  display: inline;
+  transition: color 0.3s, transform 0.3s ease-in-out; /* Smooth transitions */
+}
+.prof1:hover
+{
+  cursor: pointer;
+  transform: scale(1.01);
+}
+.prof22
+{
+  height: auto; /* Maintain aspect ratio */
+  max-width: 20%; /* Optional: Set a maximum width */
+  max-height: 8%; /* Optional: Set a maximum height */
+  object-fit: cover; /* Ensure the image covers its set dimensions without distortion */
+  border-radius: 10px;
+margin-top: 20px;
+  position: absolute;
+  margin-left: -1300px;
+  margin-top: 100px;
+  display: inline;
+
+}
+.icon {
+  width: 24px; /* Adjust the size */
+  height: 24px;
+  margin-right: 8px; /* Space between the image and text */
+  vertical-align: middle; /* Align with text */
+}
+p {
+
+  transition: color 0.3s, transform 0.3s; /* Smooth transitions */
+}
+
+p:hover {
+  color: #002c25; /* Change text color on hover */
+  transform: scale(1.03); /* Slightly enlarge the paragraph */
+  cursor: pointer;
+}
+
