@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta name="google-site-verification" content="WQB8qbzUZSGVOJmaK5Fro9wNSG-ACIDHeDTKBEpSVAQ" />
+<!-- Favicon Links -->
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="apple-touch-icon" type="image/png" href="/apple-touch-icon.png">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<!-- Manifest Link -->
+<link rel="manifest" href="/manifest.json">
+<meta name="theme-color" content="#800080">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Alpha Ventures Group",
+      "url": "https://alphaventures.co.za",
+      "logo": "https://alphaventures.co.za/logo.png",
+      "description": "Alpha Ventures propels South African businesses skyward with innovative web design, AI-driven automation, and global marketing mastery—cultivating growth, efficiency, and stellar results from our Durban roots to the digital cosmos.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "101 Innes Rd, Morningside",
+        "addressLocality": "Durban",
+        "addressRegion": "KwaZulu-Natal",
+        "postalCode": "4001",
+        "addressCountry": "ZA"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+27661879993",
+        "contactType": "Customer Service",
+        "areaServed": "ZA",
+        "availableLanguage": "English"
+      },
+      "email": "mailto:Alphaventuresgroup@pm.me",
+      "sameAs": [
+      "https://x.com/AlphaventuresG",
+      ],
+      "keywords": "web design, business automation, targeted marketing, South Africa",
+      "founder": {
+        "@type": "Person",
+        "name": "Samuel Karl Archer"
+      },
+      "slogan": "Rooted in Results, Growing Your World"
+    }
+    </script>
+    
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alpha Ventures group</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+    /* General Styles for Fading Elements */
+
+
+    h1.visible, p.visible {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .billboard-content {
+      background-color: #000000; /* Dark background */
+        margin-top: 20px;
+    }
+
+    .bookinghead {
+      background-color: #000000; /* Dark background */
+        color: #153196;
+        text-decoration: none;
+    }
+
+    .bookinghead:hover {
+        text-decoration: underline;
+    }
+
+    .reviews-section {
+      padding: 40px 0;
+      background: rgba(0, 0, 0, 0.7);
+      overflow: hidden;
+      position: relative;
+    }
+
+    .reviews-container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .reviews-scroll {
+      display: flex;
+      animation: scroll 30s linear infinite;
+      gap: 20px;
+    }
+
+    .review-card {
+      min-width: 300px;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 20px;
+      border-radius: 10px;
+      backdrop-filter: blur(5px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .review-text {
+      color: #ffffff;
+      font-size: 16px;
+      line-height: 1.6;
+      margin-bottom: 10px;
+    }
+
+    .reviewer-name {
+      color: #a3a3a3;
+      font-size: 14px;
+      font-style: italic;
+      text-align: right;
+      margin-bottom: 10px;
+    }
+
+    .stars {
+      color: #FFD700;
+      font-size: 20px;
+      text-align: center;
+    }
+
+    @keyframes scroll {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .review-card {
+        min-width: 250px;
+      }
+      
+      .review-text {
+        font-size: 14px;
+      }
+      
+      .stars {
+        font-size: 18px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .review-card {
+        min-width: 200px;
+      }
+      
+      .review-text {
+        font-size: 13px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav>
+<div class="dropdown">
+  <button class="dropdown-button">Your Journey</button>
+  <ul class="dropdown-menu">
+      <li><a href="#work">Our Work</a></li>
+      <li><a href="#list">Services</a></li>
+      <li><a href="Blog.html" class="blog-button">Visit Our Store</a></li>
+      <button formsappId="67adadbcef13300002999fd1"></button>
+      <script src="https://forms.app/static/embed.js" type="text/javascript" async defer onload="new formsapp('67adadbcef13300002999fd1', 'popup', {'overlay':'rgba(130,5,161,0.5)','button':{'color':'#8003A7','text':'Speak to our team'},'width':'800px','height':'600px','openingAnimation':{'entrance':'animate__fadeIn','exit':'animate__fadeOut'}}, 'https://w3ejwpl6.forms.app');"></script>
+  </ul>
+  <img src = "logo.png" class = "logo">
+  <script>
+     document.body.addEventListener('touchstart', function(event) {
+        // Handle the touch event
+        console.log("Touch detected.");
+    });
+
+let lastScrollY = window.scrollY;
+const navbar = document.querySelector('nav');
+let isScrolling;
+
+window.addEventListener('scroll', () => {
+  clearTimeout(isScrolling); // Clear any previously set timeout
+
+  // Check scroll direction and apply appropriate transform
+  if (window.scrollY > lastScrollY) {
+    // Scrolling down
+    navbar.style.transform = 'translateY(-100%)'; // Hide the navbar
+  } else {
+    // Scrolling up
+    navbar.style.transform = 'translateY(0)'; // Show the navbar
+  }
+
+  lastScrollY = window.scrollY;
+
+});
+  </script>
+</div>
+</nav>
+<!-- Billboard Section (Image Slider) -->
+<!-- Billboard Section (Image Slider) -->
+<div class="billboard">
+  <!-- Background Video -->
+  <video autoplay muted loop playsinline class="background-video">
+    <source src="earth1.mp4" type="video/mp4">
+
+  </video>
+
+  <!-- Content -->
+  <div class="content">
+    <h3>Welcome to Alpha Ventures Group</h3>
+    <p>Grow Your World with Proven Results: Our expert web design, targeted social media, Google advertising, and seamless business automation help build your online presence, drive conversions, and streamline operations.</p>
+    <button formsappId="67adadbcef13300002999fd1" class="custom-forms-btn"></button>
+    <script src="https://forms.app/static/embed.js" type="text/javascript" async defer onload="new formsapp('67adadbcef13300002999fd1', 'popup', {'overlay':'rgba(130,5,161,0.5)','button':{'color':'#8003A7','text':'Speak to our team'},'width':'800px','height':'600px','openingAnimation':{'entrance':'animate__fadeIn','exit':'animate__fadeOut'}}, 'https://w3ejwpl6.forms.app');"></script>
+    
+    <style>
+    
+    /* Media query to hide the button on small screens (e.g., below 768px) */
+    @media (max-width: 768px) {
+        .custom-forms-btn {
+            display: none;
+        }
+    }
+    </style>
+</div>
+</div>
+
+    <script>
+      
+        // Fade in the heading and paragraph after page load
+        window.addEventListener('load', () => {
+            const heading = document.getElementById('fadeInHeading');
+            const paragraph = document.getElementById('fadeInParagraph');
+
+            // Fade in heading after 800ms
+            setTimeout(() => {
+                heading.classList.add('visible');
+            }, 800);
+
+            // Fade in paragraph after 1200ms
+            setTimeout(() => {
+                paragraph.classList.add('visible');
+            }, 1500);
+        });
+    </script>
+
+<!--About Us Section-->
+<h2 class ="h21">Results We Deliver</h2>
+
+
+
+<section id="about" class="sections">
+  <div class="text-blocks">
+    <div class="block">
+      <h3>24/7 visible business profile</h3>
+      <p>Your business, visible 24/7 with a professional website—attract customers anytime, anywhere, and never miss an opportunity.</p>
+      <img src = "icons8-last-24-hours-64.png" class = "icon">
+    </div>
+    <div class="block1">
+      <h3>Unheard of customer conversions </h3>
+      <p>Well-designed websites guide visitors seamlessly, encouraging action and driving higher conversion rates by enhancing user experience and trust.</p>
+      <img src = "icons8-increase-64.png" class = "icon">
+    </div>
+    <div class="block2">
+      <h3>Unforgettable Brand Presence</h3>
+      <p>A well-designed website reinforces your brand's unique identity, creating a cohesive, memorable experience that builds trust and loyalty.</p>
+      <img src = "rocket.png" class = "icon">
+    </div>
+</section>
+<script src="script.js"></script>
+
+<!-- Reviews Section -->
+<section class="reviews-section">
+  <div class="reviews-container">
+    <div class="reviews-scroll">
+      <div class="review-card">
+        <p class="review-text">"Alpha Ventures created our online presence. Their web design expertise has enhanced our admin processes and created seamless online payment and booking solutions."</p>
+        <p class="reviewer-name">- Dr. LM Archer, Medical Director</p>
+        <div class="stars">★★★★★</div>
+      </div>
+      <div class="review-card">
+        <p class="review-text">"Their creative approach and professional execution transformed our website into a powerful business tool. The results have been outstanding."</p>
+        <p class="reviewer-name">- Susan van der Berg, Business Owner</p>
+        <div class="stars">★★★★★</div>
+      </div>
+      <div class="review-card">
+        <p class="review-text">"The automation solutions they implemented saved us countless hours and significantly improved our customer service response times."</p>
+        <p class="reviewer-name">- James Naidoo, Operations Manager</p>
+        <div class="stars">★★★★★</div>
+      </div>
+      <div class="review-card">
+        <p class="review-text">"Alpha Ventures helped us establish a strong digital presence. Their marketing strategies have consistently delivered quality leads."</p>
+        <p class="reviewer-name">- Michelle Zulu, Marketing Director</p>
+        <div class="stars">★★★★★</div>
+      </div>
+      <div class="review-card">
+        <p class="review-text">"Exceptional service and attention to detail. They understood our vision and brought it to life beautifully on our website."</p>
+        <p class="reviewer-name">- David Pillay, CEO</p>
+        <div class="stars">★★★★★</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const reviewsScroll = document.querySelector('.reviews-scroll');
+  const reviews = document.querySelectorAll('.review-card');
+  
+  // Clone all reviews for seamless scrolling
+  reviews.forEach(review => {
+    const clone = review.cloneNode(true);
+    reviewsScroll.appendChild(clone);
+  });
+  
+  // Pause animation on hover
+  reviewsScroll.addEventListener('mouseenter', () => {
+    reviewsScroll.style.animationPlayState = 'paused';
+  });
+  
+  reviewsScroll.addEventListener('mouseleave', () => {
+    reviewsScroll.style.animationPlayState = 'running';
+  });
+});
+</script>
+<section id="list">
+  <ul class="list">
+    
+    <h2>Services on Offer</h2>
+    <li>
+      <h3>Marketing Services</h3>
+      <p>Launch your brand forward with our expert marketing craft, planting seeds for growth and igniting engagement in South Africa. We present your message to our ideal customer, reaping remarkable results that elevate your presence from rooted foundations to the vast digital space.</p>
+    </li>
+    <li>
+      <a href="Ourservices.html">
+      <h3>Automate the chaos</h3 >
+      <p>Ground your operations in AI-driven automation, cultivating efficiency and trimming costs with great precision. Our smart systems propel your workflow , rooting scalability, so your business thrives effortlessly</p>
+    </li>
+          <button class="basic-button">More on our services</button href="Ourservices.html">
+        </a>
+          <div id= "email-button"></div>
+  </ul>
+  <div>
+    <img src="2a3b0756-d8b5-4009-864e-fe49373de9c2.webp" alt="Inset Styled Image" class="inset-image">
+</div><h2 class ="h21">Our Focus</h2>
+<section id="about" class="sections">
+  <div class="text-blocks30">
+
+    <div class="block31">
+      <h3>Service Delivery</h3>
+      <p>We believe that timely, efficient, and personalized service is key to fostering trust and building lasting relationships with the businesses we support.</p>
+      <img src="service.png" class="icon">
+    </div>
+    <div class="block32">
+      <h3>The last 5% is where greatness happens.</h3>
+      <p>At our core, we tackle the toughest 5%—where true excellence is forged. Elevate your business with our relentless pursuit of perfection.</p>
+      <img src="Quality.png" class="icon">
+    </div>
+    <div class="block33">
+      <h3>Good design is as little design as possible.</h3>
+      <p>Embrace simplicity. Good design means less design. Focus on essence, clarity, and impact in every detail.</p>
+      <img src="sus2.png" class="icon">
+    </div>
+  </div>
+</section>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const blocks = document.querySelectorAll(".block, .block1, .block2");
+    
+      function fadeInOnScroll() {
+        blocks.forEach((block) => {
+          const blockPosition = block.getBoundingClientRect().top;
+          const screenHeight = window.innerHeight;
+    
+          if (blockPosition < screenHeight * 0.9) { // Adjust this threshold if needed
+            block.classList.add("show");
+          } else {
+            block.classList.remove("show"); // Remove for fade-out effect
+          }
+        });
+      }
+    
+      window.addEventListener("scroll", fadeInOnScroll);
+      fadeInOnScroll(); // Run on page load in case elements are already in view
+    });
+    </script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const blocks = document.querySelectorAll(".block31, .block32, .block33");
+  
+    function fadeInOnScroll() {
+      blocks.forEach((block) => {
+        const blockPosition = block.getBoundingClientRect().top;
+        const screenHeight = window.innerHeight;
+  
+        if (blockPosition < screenHeight * 0.9) { // Adjust this threshold if needed
+          block.classList.add("show");
+        } else {
+          block.classList.remove("show"); // Remove for fade-out effect
+        }
+      });
+    }
+  
+    window.addEventListener("scroll", fadeInOnScroll);
+    fadeInOnScroll(); // Run on page load in case elements are already in view
+  });
+  </script>
+        <section class="section01">
+          <h3>Planting Success in 45 Seconds Flat</h3>
+              <p>Rooted in Results, Growing Your World: The average visitor spends just 45 seconds on a website—a critical reality we harness. We unearth your audience's truth through hard numbers, optimizing for that fleeting moment they decide to stay or leave, to expand your reach. Our automated systems deliver timely, fertile insights to keep leads thriving, cultivating a seamless customer experience from beginning to end.</p>
+            </div>
+          </div>
+        </section>
+        <section>
+        <div class="image">
+          <img src="aidata.webp" alt="Inset Styled Image" class="inset-image2">
+        </div>
+      </section>
+  
+
+          <h1 class="h20">Begin in a few easy steps</h1>
+          <div class="text-blocks35">
+          
+            <div class="block31">
+              <h3>Tell us about yourself</h3>
+              <p>Start by filling out our quick form so we can understand your needs and how we can best support you.</p>
+
+              <button formsappId="67adadbcef13300002999fd1"></button>
+              <script src="https://forms.app/static/embed.js" type="text/javascript" async defer onload="new formsapp('67adadbcef13300002999fd1', 'popup', {'overlay':'rgba(130,5,161,0.5)','button':{'color':'#8003A7','text':'Speak to our team'},'width':'800px','height':'600px','openingAnimation':{'entrance':'animate__fadeIn','exit':'animate__fadeOut'}}, 'https://w3ejwpl6.forms.app');"></script>
+            </div>
+            <div class="block32">
+              <h3>Then we will provide you with a rough draft</h3>
+              <p>We create a visual representation of what your website will look like once completed.</p>
+              <img src="Draft.png" class="icon">
+            </div>
+            <div class="block33">
+              <h3>We offer revisions to ensure it meets your expectations.</h3>
+              <p>This is where we make all the needed design and functionality changes.</p>
+              <img src="revision.png" class="icon">
+            </div>
+            <div class="block33">
+              <h3>We bring your website to life</h3>
+              <p>We bring your website to life, then proceed to build it with all the functionality you require. From intuitive navigation to seamless performance.</p>
+              <img src="life.png" class="icon">
+            </div>
+          </div>
+        
+<section id ="work" class = "block12-container">
+<h1 class="h20">Our marketing work on Display</h1>
+<div class="block12">
+  <a href="https://www.riverdoc.co.za/" target="_blank" rel="noopener">
+    <h3>Riverdoc.co.za</h3>
+  </a>
+  <p>We develop websites that systematically enhance business operations, streamline processes, and boost overall efficiency.</p>
+  <div class="iframe-container">
+    <iframe src="https://www.riverdoc.co.za" title="Riverdoc Website"></iframe>
+
+</section>
+<section class = "video">
+<h2>Grow with Us</h2>
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1055570590?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Alpha Ventures"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+        <!--Contact Section-->
+</section>
+        <div class ="pay" id ="button">
+<h2>Let's grow your business</h2>
+<p></p>
+<button formsappId="67adadbcef13300002999fd1"></button>
+<script src="https://forms.app/static/embed.js" type="text/javascript" async defer onload="new formsapp('67adadbcef13300002999fd1', 'popup', {'overlay':'rgba(130,5,161,0.5)','button':{'color':'#8003A7','text':'Speak to our team'},'width':'800px','height':'600px','openingAnimation':{'entrance':'animate__fadeIn','exit':'animate__fadeOut'}}, 'https://w3ejwpl6.forms.app');"></script>
+
+</a>
+</div>
+<!-- The "Help" button, positioned in the bottom-left -->
+<a href="https://wa.me/27661879993" class="help-btn" target="_blank">Help</a>
+
+<script>
+const brands = document.querySelector('.brands');
+const total_brand = brands.children.length;
+document.documentElement.style.setProperty('--total-brand', total_brand);
+
+for (let i = 0; i < total_brand; i++) {
+  brands.appendChild(brands.children[i].cloneNode(true));
+}
+
+</script>
+
+
+<!-- Google Maps -->
+<footer id="contact" class="footer">
+ <img src = "Alpha Ventures finale.png" class = "logo1">
+    <h2>Contact us</h2>
+    <p>Email: <a href="mailto:Alphaventuresgroup@pm.me">Alphaventuresgroup@pm.me</a></p>
+    <p>Phone: <a href="tel:0661879993">066 187 9993</a></p>
+    <a href="https://twitter.com/SamuelkArcher" target="_blank" rel="noopener noreferrer">Follow me on X</a>
+
+    <img src="Samuelkarlarcher.jpeg" alt="description" class ="me" />
+
+
+
+
+  <div class="footer-credits">
+    <p>
+      Serving the globe, one website at a time<a href="https://alphaventures.co.za/">Alpha Ventures Group</a>. 
+      © 2025 All Rights Reserved.
+    </p>
+  </div>
+</footer>
+
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const links = document.querySelectorAll('a');
+
+        links.forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault(); // Prevent default navigation
+                const href = link.getAttribute('href');
+
+                // Apply fade-out effect
+                document.body.classList.add('fade-out');
+
+                // Wait for animation before navigating
+                setTimeout(() => {
+                    window.location.href = href;
+                }, 500); // Match transition duration
+            });
+        });
+    });
+</script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,499 @@
+/* General css Layout */
+body {
+  font-family: "lato", sans-serif; /* Default font */
+  font-size: 18px;
+  color: #000000; /* Default text color */
+  line-height: 1.6; /* Improves readability */
+  background-color: #000000;
+  padding: 0px; /* Adds padding around the content */
+  text-align: center; /* Ensures text is centered */
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+  margin: 0;
+  margin-right: 0px;
+}
+
+html {
+background-color: #000 !important; /* Sets the background to pitch black */
+scroll-behavior: smooth;
+}
+* {
+box-sizing: border-box;
+}
+@media (max-width: 768px) {
+body {
+padding: 0;
+margin: 0;
+}
+}
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+margin-bottom: 15px;
+color: #ffffff;; /* Darker color for headings */
+}
+
+h1 {
+font-size: 3.em;
+
+}
+
+h2 {
+font-size: 2.em;
+color: #2104c6;;
+}
+
+h3 {
+color: #2104c6;;
+font-size: 1.em;
+}
+/* General Layout */
+.container {
+  background-color: #000000;
+    max-width: 100%; /* Restricts content width */
+    margin: 0 auto; /* Centers the container */
+    padding: 0 15px; /* Adds padding on the sides */
+}
+
+a {
+    color: #08158f; /* Blue color for links */
+    transition: color 0.3s ease; /* Smooth color transition */
+    text-decoration: none; /* Removes the underline */
+  }
+
+a:hover {
+    color: #00108b;; /* Darker blue on hover */
+}
+a:hover, a:focus {
+  color: #0217b9;
+}
+
+/* Styling for the services section */
+.list {
+
+  text-align: center;
+align-items: center;
+padding: 100px;
+  background-color: #000000;
+  list-style-type: none;
+  position: relative; /* Ensures this element stays in the correct flow */
+  z-index: 1; /* Adjust if necessary to avoid overlap with other elements */
+
+}
+/* Responsive adjustments for smaller screens */
+@media screen and (max-width: 1000px) {
+  .list {
+    float: none; /* Remove float to make it full-width */
+    max-width: 100%; /* Take full width on smaller screens */
+    text-align: center; /* Center content */
+    padding: 15px;
+  }
+  .list p {
+    margin:0;
+    padding:0;
+    color: #ffffff;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+  }
+}
+.list h2 {
+
+  text-align: center;
+  align-items: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #2001cd;
+}
+.list h4 {
+  color:#2001cd;
+}
+
+.list li h3 {
+  text-align: center;
+  align-items: center;
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+
+.list p {
+  font-size: 1.5rem;
+  color: purple;
+  background-color: #000000; /* Dark background */
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.list :focus {
+  color: #ffffff;
+}
+
+.list p:hover {
+  transform: translateX(5px);
+}
+.billboard {
+  margin-right: 0;
+  position: relative;
+  width: 100%;
+  height: 55vh; /* Full screen height */
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  float: left;
+  justify-content: flex-start;
+  background-color: black; /* Fallback color */
+  color: #fff;
+}
+
+.content {
+  max-height: 200vh; /* Allow the content to expand naturally */
+  font-size: 1.8rem;
+  max-width: 800px;
+  position: relative;
+  z-index: 1000;
+  color: purple;
+  text-align: left;
+  padding: 0;
+
+  margin-top: 32px;
+
+  margin-left: 40px; /* Keep it properly aligned */
+}
+
+@media (max-width: 1200px) {
+  .content {
+    z-index: 1000;
+    max-height: none; /* Remove height restriction */
+    font-size: 1.3rem;
+    margin-top: 40px;
+    max-width: 400px;
+    word-wrap: break-word; /* Ensure long words break properly */
+    overflow: visible; /* Ensure all content is displayed */
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.content h5
+{
+  color: white;
+  font-size: 1.5rem;
+}
+/* Navigation Menu */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: transform 0.3s ease-in-out;
+  z-index: 1100; /* Ensure it's above other elements */
+}
+.dropdown {
+  width: 100%;
+  position: relative;
+  z-index: 1000;
+}
+
+/* Dropdown Button */
+.dropdown-button {
+  font-weight: bold;
+  width: 100%;
+  background-color: #000000;  /* Gold color for the button */
+  color: rgb(118, 118, 118);
+  padding: 10px 0;  /* Add vertical padding for better appearance */
+  font-size: 16px;
+  width: 100%;  /* Ensure the button spans the entire width */
+  border: none;
+  cursor: pointer;
+  text-align: center;  /* Center the text inside the button */
+  border-radius: 0;  /* Clean, full-width style */
+  box-sizing: border-box;  /* Prevent padding from affecting the button's width */
+}
+
+.dropdown-button:hover {
+  background-color: #2b48b1; /* Darker gold on hover */
+}
+
+.dropdown-menu {
+  display: none; /* Hidden by default */
+  position: absolute; /* Position relative to the button */
+  background-color: #716f6f;
+  width: 100%; /* Match the button's width */
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Add shadow for better visibility */
+  list-style: none; /* Remove list bullets */
+  padding: 0; /* Remove padding from the list */
+  margin: 0; /* Remove margin */
+  border-radius: 0; /* Match the rectangular style */
+  left: 0; /* Align with the button */
+  text-transform: none; /* Ensure the text is displayed as written */
+  z-index: 1000;
+}
+
+.dropdown-menu li {
+  padding: 10px 16px; /* Add padding for clickable items */
+  text-align: center; /* Align text to the left */
+}
+
+.dropdown-menu li a {
+  text-decoration: none; /* Remove underline */
+  color: #333; /* Text color */
+  display: block; /* Make the link block-level for easy clicking */
+  text-transform: none; /* Ensure the text is displayed as written */
+}
+
+.dropdown-menu li a:hover {
+  background-color: #636363; /* Highlight link on hover */
+}
+
+.dropdown:hover .dropdown-menu {
+  width: 100%;
+  display: block; /* Show the dropdown menu when hovering over the button */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .dropdown {
+    display: block;              /* Stack the dropdown in smaller screens */
+    width: 100%;                 /* Make the dropdown width 100% on small screens */
+  }
+
+  .dropdown-menu {
+    position: static;            /* Make the dropdown menu stack below the button */
+    width: 100%;                 /* Make the dropdown menu take up the full width */
+  }
+}
+/* Billboard Content */
+.billboard-content {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: left;
+  color: #ffffff;
+}
+
+.billboard-content h1 {
+  font-size: 3em;
+  margin-bottom: 5%;
+}
+
+.billboard-content p {
+  font-size: 1.5em;
+}
+
+.logo {
+  float: left;
+  max-width: 20%;
+  border-radius: 10px;
+  margin-right: 78%; /* Adjust spacing between logo and content */
+  margin-top: 1%;
+
+}
+.me
+{
+  float: right;
+  position: absolute;
+  max-width: 20%;
+  border-radius: 10px;
+  margin-right: -75%;
+  margin-top: 1%;
+  
+}
+@media (max-width: 1801px) {
+ 
+  .sections h2
+  {
+    text-align: center;
+    align-items: center;
+  
+  }
+  
+    .me{
+      max-width: 10%;
+    }
+    .logo{
+      max-width: 10%;
+    }
+    
+    }
+  @media (max-width: 1000px) {
+    .ai{
+      display: none;
+    }
+    .ai2{
+      display: none;
+    }
+    .sections{
+  text-align: center;
+    }
+  .me{
+    max-width: 18%;
+  }
+  .logo{
+    max-width: 18%;
+  }
+    }
+    @media (max-width: 480px) {
+   
+    .me{
+      max-width: 15%;
+    }
+    .logo{
+      max-width: 15%;
+    }
+      }
+
+.background-video {
+  position: absolute; /* Change to absolute for better control */
+  top: 0px;
+  right: 0; /* Ensures it's positioned on the right side */
+  overflow-x: hidden;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: 1000;
+  opacity: 0;
+  animation: fadeIn 3s ease-in forwards;
+}
+
+/* Billboard Content */.footer {
+  background-image: url('Durban\ .jpg'); /* Replace with your image path */
+  background-size: cover; /* Scales image to cover the footer */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents tiling */
+  color: #fff; /* White text for contrast—adjust as needed */
+  padding: 20px; /* Adds some internal spacing */
+}
+.footer h2
+{
+  color:purple;
+}
+.footer {
+  height: 50vh;
+  line-height: 1.6;
+  background-color: #000000; /* Dark background */
+  color: white;              /* White text color */
+  padding: 40px 20px;        /* Padding inside the footer */
+  text-align: center;        /* Center the text */
+  cursor: pointer;
+  width: 100%;               /* Full width of the screen */
+  box-sizing: border-box;    /* Prevent padding from overflowing */
+  display: flex;  
+  flex: 1;           /* Use flexbox for vertical centering */
+  flex-direction: column;    /* Stack elements vertically */
+  align-items: center;       /* Center elements horizontally */
+}
+
+/* Footer headings (h2) */
+
+
+/* Footer paragraphs */
+footer p {
+  font-size: 1rem;           /* Standard font size for paragraphs */
+  margin: 0px 0;            /* Space between paragraphs */
+  text-align: center;        /* Center the text */
+  width: 100%;    
+  flex: 1;           /* Ensure they take full width */
+  display: inline-block;     /* Ensure they are treated like block-level elements */
+}
+
+
+
+/* Container for the map */
+.map-container iframe {
+  overflow: hidden;
+  width: 100%;               /* Make iframe responsive */
+  height: 400px;             /* Set a fixed height for the map */
+  border: 0;                 /* Remove border around the iframe */
+  margin-top: 20px;          /* Space above the map */
+}
+
+/* Footer credits */
+.footer-credits p {
+  font-size: 0.9rem;         /* Smaller text for credits */
+  margin-top: 20px;          /* Space above the credits text */
+}
+
+/* Footer links */
+footer a {
+  color: #cdcdcd;            /* Light color for links */
+  text-decoration: none;     /* Remove underline from links */
+}
+
+/* Hover effect on footer links */
+footer a:hover {
+  text-decoration: underline; /* Underline links on hover */
+}
+
+/* Responsive Fix for Mobile */
+@media (max-width: 768px) {
+  footer {
+      padding: 20px 10px; /* Reduce padding on smaller screens */
+  }
+
+  footer h2 {
+      font-size: 1.5rem;   /* Reduce heading font size on mobile */
+  }
+
+  footer p {
+      font-size: 0.9rem;   /* Smaller font size for paragraphs on mobile */
+  }
+
+  .map-container iframe {
+      height: 300px;        /* Reduce map height on smaller screens */
+  }
+}
+
+  
+
+/* Navigation links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #0020b0;
+}
+
+
+  /* Responsive Design: Make the footer elements stack on smaller screens */
+  @media (max-width: 768px) {
+    footer {
+      padding: 30px 10px;  /* Adjust padding for smaller screens */
+    }
+  
+    footer h2 {
+      font-size: 1.5rem;    /* Smaller heading font size */
+    }
+  
+    footer p {
+      font-size: 0.9rem;    /* Smaller text size for paragraphs */
+    }
+    .general {
+      position: relative; /* Ensure proper positioning context */
+  }
+  
+  .general {
+      position: relative; /* Avoid overlap */
+      z-index: 1; /* Stack items correctly */
+      margin-bottom: 50px;
+      margin-left: 30px;
+      float: right;
+  }
+  }

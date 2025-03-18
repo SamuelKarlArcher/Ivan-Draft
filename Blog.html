@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta name="google-site-verification" content="WQB8qbzUZSGVOJmaK5Fro9wNSG-ACIDHeDTKBEpSVAQ" />
+<!-- Favicon Links -->
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="apple-touch-icon" type="image/png" href="/apple-touch-icon.png">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<!-- Manifest Link -->
+<link rel="manifest" href="/manifest.json">
+<meta name="theme-color" content="#800080">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Alpha Ventures Group",
+      "url": "https://alphaventures.co.za",
+      "logo": "https://alphaventures.co.za/logo.png",
+      "description": "Alpha Ventures propels South African businesses skyward with innovative web design, AI-driven automation, and global marketing mastery—cultivating growth, efficiency, and stellar results from our Durban roots to the digital cosmos.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "101 Innes Rd, Morningside",
+        "addressLocality": "Durban",
+        "addressRegion": "KwaZulu-Natal",
+        "postalCode": "4001",
+        "addressCountry": "ZA"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+27661879993",
+        "contactType": "Customer Service",
+        "areaServed": "ZA",
+        "availableLanguage": "English"
+      },
+      "email": "mailto:Alphaventuresgroup@pm.me",
+      "sameAs": [
+      "https://x.com/AlphaventuresG",
+      ],
+      "keywords": "web design, business automation, targeted marketing, South Africa",
+      "founder": {
+        "@type": "Person",
+        "name": "Samuel Karl Archer"
+      },
+      "slogan": "Rooted in Results, Growing Your World"
+    }
+    </script>
+    
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alpha Ventures group</title>
+    <link rel="stylesheet" href="blog.css">
+   
+</head>
+<body>
+  <!-- Add this product display section after the opening body tag -->
+  <section class="product-showcase">
+    <div class="product-container">
+      <div class="product-image">
+        <img src="your-product-image.jpg" alt="Product Name">
+      </div>
+      <div class="product-details">
+        <h2>Product Name</h2>
+        <p class="product-description">Your product description goes here.</p>
+        <div class="product-price">R999.99</div>
+        <button class="buy-button" id="yoco-buy-button">Buy Now</button>
+        <script>
+          document.getElementById('yoco-buy-button').addEventListener('click', async () => {
+              try {
+                  // Send a request to your server to initiate the checkout
+                  const response = await fetch('/create-checkout', {
+                      method: 'POST',
+                      headers: {
+                          'Content-Type': 'application/json',
+                      },
+                      body: JSON.stringify({
+                          amount: 900, // Amount in cents (R9.00)
+                          currency: 'ZAR', // South African Rand
+                      }),
+                  });
+  
+                  const data = await response.json();
+  
+                  if (data.redirectUrl) {
+                      // Redirect the user to the Yoco payment page
+                      window.location.href = data.redirectUrl;
+                  } else {
+                      console.error('Error: No redirect URL received');
+                  }
+              } catch (error) {
+                  console.error('Error initiating checkout:', error);
+              }
+          });
+      </script>
+        
+        <!-- Add a loading indicator (hidden by default) -->
+        <div class="payment-loading" style="display: none;">
+          Processing payment...
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Add this product display section after the opening body tag -->
+  <section class="product-showcase">
+    <div class="product-container">
+      <div class="product-image">
+        <img src="your-product-image.jpg" alt="Product Name">
+      </div>
+      <div class="product-details">
+        <h2>Product Name</h2>
+        <p class="product-description">Your product description goes here. Highlight the key features and benefits that make your product special.</p>
+        <div class="product-price">R999.99</div>
+        <button class="buy-button">Buy Now</button>
+      </div>
+    </div>
+  </section>
+
+  <p>hi i</p>
+
+  </body>
+</html>

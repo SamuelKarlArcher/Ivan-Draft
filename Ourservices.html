@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta name="google-site-verification" content="WQB8qbzUZSGVOJmaK5Fro9wNSG-ACIDHeDTKBEpSVAQ" />
+<!-- Favicon Links -->
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="apple-touch-icon" type="image/png" href="/apple-touch-icon.png">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<!-- Manifest Link -->
+<link rel="manifest" href="/manifest.json">
+<meta name="theme-color" content="#800080">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Alpha Ventures Group",
+      "url": "https://alphaventures.co.za",
+      "logo": "https://alphaventures.co.za/logo.png",
+      "description": "Alpha Ventures propels South African businesses skyward with innovative web design, AI-driven automation, and global marketing mastery—cultivating growth, efficiency, and stellar results from our Durban roots to the digital cosmos.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "101 Innes Rd, Morningside",
+        "addressLocality": "Durban",
+        "addressRegion": "KwaZulu-Natal",
+        "postalCode": "4001",
+        "addressCountry": "ZA"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+27661879993",
+        "contactType": "Customer Service",
+        "areaServed": "ZA",
+        "availableLanguage": "English"
+      },
+      "email": "mailto:Alphaventuresgroup@pm.me",
+      "sameAs": [
+      "https://x.com/AlphaventuresG",
+      ],
+      "keywords": "web design, business automation, targeted marketing, South Africa",
+      "founder": {
+        "@type": "Person",
+        "name": "Samuel Karl Archer"
+      },
+      "slogan": "Rooted in Results, Growing Your World"
+    }
+    </script>
+    
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alpha Ventures group</title>
+    <link rel="stylesheet" href="Ourservices.css">
+    <style>
+    /* General Styles for Fading Elements */
+
+
+    h1.visible, p.visible {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .billboard-content {
+        margin-top: 20px;
+    }
+
+    .bookinghead {
+        color: #0626b1;
+        text-decoration: none;
+    }
+
+    .bookinghead:hover {
+        text-decoration: underline;
+    }
+
+  </style>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav>
+<div class="dropdown">
+  <button class="dropdown-button">Your Journey</button>
+  <ul class="dropdown-menu">
+      <li><a href="index.html">Main Page</a></li>
+      <li><a href="index.html#list">Services</a></li>
+      <button formsappId="67adadbcef13300002999fd1"></button>
+      <script src="https://forms.app/static/embed.js" type="text/javascript" async defer onload="new formsapp('67adadbcef13300002999fd1', 'popup', {'overlay':'rgba(130,5,161,0.5)','button':{'color':'#8003A7','text':'Speak to our team'},'width':'800px','height':'600px','openingAnimation':{'entrance':'animate__fadeIn','exit':'animate__fadeOut'}}, 'https://w3ejwpl6.forms.app');"></script>
+  </ul>
+  <script>
+     document.body.addEventListener('touchstart', function(event) {
+        // Handle the touch event
+        console.log("Touch detected.");
+    });
+
+let lastScrollY = window.scrollY;
+const navbar = document.querySelector('nav');
+let isScrolling;
+
+window.addEventListener('scroll', () => {
+  clearTimeout(isScrolling); // Clear any previously set timeout
+
+  // Check scroll direction and apply appropriate transform
+  if (window.scrollY > lastScrollY) {
+    // Scrolling down
+    navbar.style.transform = 'translateY(-100%)'; // Hide the navbar
+  } else {
+    // Scrolling up
+    navbar.style.transform = 'translateY(0)'; // Show the navbar
+  }
+
+  lastScrollY = window.scrollY;
+
+});
+  </script>
+</div>
+</nav>
+<!-- Billboard Section (Image Slider) -->
+<!-- Billboard Section (Image Slider) -->
+<div class="billboard">
+  <!-- Background Video -->
+  <video autoplay muted loop playsinline class="background-video">
+    <source src="earth22 2.mov" type="video/mp4">
+
+  </video>
+
+
+
+  <!-- Content -->
+  <div class="content">
+
+    <h5 id="fadeInParagraph">Discover Your Path with Our Tailored Services Below:</h5>
+
+  </div>
+</div>
+
+<!--About Us Section-->
+<section id="list">
+  <ul class="list">
+    <h2>Services on Offer</h2>
+
+    <li class="fade-in">
+      <a href="Ourservices.html">
+      <h3>Websites Development & Targeted Marketing</h3>
+      </a>
+      <p>Plant your flag in the digital sphere with a bespoke, expertly coded website tailored to your business terrain. Our world-class development services cultivate a seamless online ecosystem that drives growth. Plus, we skyrocket your presence with strategic marketing—tapping Facebook Ads, Google Ads, blogs, and outdoor campaigns—to orbit your brand worldwide. Ready to unearth your business’s full potential</p>
+      <h4>Our Pricing</h4>
+      <p>Our starting price is R4,500 for a minimalistic build, which includes up to three website pages. Additional services are charged at R350 per hour.</p>
+    </li>
+    <li class="fade-in">
+      <h3>Automate the chaos</h3>
+      <p>Think systems that create an easier and better way of working with your customers and staff. We work with software such as Notion, Slack, Mailchimp, WhatsApp Business, Chatbots, and Yoco to improve efficiency. We know there is a better way to operate. If you are interested, we would love to explore how we can optimize your systems.</p>
+      <h4>Our Pricing</h4>
+      <p>This is a tailored service. We focus on solving problems in your business. To do that, we need as much information as possible about your business to create a quote. We charge a flat rate of R350 per hour</p>
+    </li>
+  </ul>
+</section>
+
+<style>
+  /* Initial state: hidden and slightly offset */
+  .fade-in {
+    opacity: 0;
+    transform: translateY(20px); /* Slight slide-up effect */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Smooth fade and slide */
+  }
+
+  /* Active state: fully visible and in place */
+  .fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+</style>
+
+<script>
+  // Function to check if an element is in the viewport
+  function isInViewport(element) {
+    const rect = element.getBoundingClientRect();
+    return (
+      rect.top >= 0 &&
+      rect.top <= (window.innerHeight || document.documentElement.clientHeight) * 0.8
+    );
+  }
+
+  // Function to handle the fade-in and fade-out effect
+  function handleScroll() {
+    const items = document.querySelectorAll('.fade-in');
+    items.forEach(item => {
+      if (isInViewport(item)) {
+        item.classList.add('visible'); // Fade in when in view
+      } else {
+        item.classList.remove('visible'); // Fade out when out of view
+      }
+    });
+  }
+
+  // Run on scroll only (remove load event to avoid instant trigger)
+  window.addEventListener('scroll', handleScroll);
+</script>
+
+
+
+
+
+</section>
+</script src="script.js"></script>
+        <!--Contact Section-->
+</div>
+
+     
+
+
+<!-- Google Maps -->
+<footer id="contact" class="footer">
+  <img src = "Alpha Ventures finale.png" class = "logo">
+     <h2>Contact us</h2>
+     <p>Email: <a href="mailto:Alphaventuresgroup@pm.me">Alphaventuresgroup@pm.me</a></p>
+     <p>Phone: <a href="tel:0661879993">066 187 9993</a></p>
+     <a href="https://twitter.com/SamuelkArcher" target="_blank" rel="noopener noreferrer">Follow me on X</a>
+ 
+     <img src="Samuelkarlarcher.jpeg" alt="description" class ="me" />
+ 
+ 
+   <div class="footer-credits">
+     <p>
+      Serving the globe, one website at a time<a href="https://alphaventures.co.za/">Alpha Ventures Group</a>. 
+       © 2025 All Rights Reserved.
+     </p>
+   </div>
+ </footer>
+</body>
+
+</html>
